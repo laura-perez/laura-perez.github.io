@@ -1,0 +1,125 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92164527.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Sunroof Description and Operation</H2>
+
+<p>The tilt/slide sunroof consists of a moving glass panel and a manual sunshade. In the tilt/slide sunroof system the rear of the glass tilts up for venting and slides between the head liner and roof panel as it slides open. The glass is controlled by
+an integrated motor/controller. The sunshade has a mechanical connection to the glass causing it to open with the glass and keeping it from closing more than the glass.</p>
+<p>The electrical portion of the tilt/slide sunroof system consists of:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Body control module (BCM)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sunroof glass control module</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sunroof control switch assembly</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Vent control switch assembly</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Local interconnected network (LIN-Bus)</td></tr></table></div>
+
+<p>The sunroof electrical system uses a master/slave configuration utilizing a LIN-Bus based system for communication. The BCM is designated as the master, while the sunroof control module is configured as the slave.</p>
+<p>As the system master, the BCM uses the LIN-Bus communication bus to enable or disable sunroof operation, communicate vehicle information to the sunroof controller, and request sunroof movement. The sunroof controller provides system status and diagnostic
+information to the BCM for diagnostic reporting and operational purposes.</p>
+<p>The sunroof glass is controlled by a integrated motor/controller containing the necessary electronics, motor, hall effect position sensors, as well as the interface to the driver control switches. The motor/controller is capable of controlling motion
+based on control switch activation and LIN-Bus message commands from the system master.</p>
+<p>The operational calibrations for the sunroof integrated motor/controller are loaded over the LIN-Bus communication bus by the sunroof system master, the BCM.</p>
+
+<A NAME="ss1-2164527">
+<A HREF="#ss1-2164527">
+<H3>Sunroof Glass and Sunshade Control Switches</H3></A><p>The sunroof control switches are connected directly to the controller. The sliding glass switches provide detent positions for open, express open, off, close, and express close. The vent switches provide detent positions for open, off, and close. The
+control switch completes the circuit between two signals provided by the control module, a reference ground input and a pull-up voltage provided by an analog to digital switch input. The control switches place a different resistor ladder network in the circuit
+depending on the function selected. The controller&rsquo;s analog to digital switch input reads the resulting voltage range and determines the function as indicated in the included charts.</p>
+
+<A NAME="ss2-2164527">
+<A HREF="#ss2-2164527">
+<H3>System Protection Functions</H3></A><p>Normal operation of the sunroof system may be altered by one of the following events.</p>
+<h4>Obstacle or Blockage Detection</h4><p>When enabled, obstacle detection is active only while the sunroof opening is approximately 4-200&nbsp;mm (0.16-7.87&nbsp;in) when moving in the closing direction. When an obstacle is detected in this range, the motion in the closing direction
+will stop and the sunroof will reverse direction for a short distance. The reversal shall complete regardless of operating Mode. If the travel is outside the range defined above, the sunroof will try to continue closing until it detects a motor stall condition
+or the system is at one of it&rsquo;s defined stops.</p>
+<h4>Motor stall</h4><p>If the sunroof is moving in the open or close direction and stops moving for 350&nbsp;ms while the switch or LIN-Bus command is active, and no obstacle has been detected, the motor shall be turned off to prevent overheating.</p>
+<h4>Sunroof System Thermal Protection</h4><p>The sunroof controllers have a thermal protection algorithm to protect the sunroof controller and motor from damage due to overheating conditions resulting from immoderately switch actuations. The thermal protection algorithm will cause any new sunroof
+open commands to be ignored until the motor is allowed to cool. A number of close requests during an over temperature condition will be allowed. If the thermal protection is triggered during an obstacle detection event, the sunroof reversal shall be finished.</p>
+
+<A NAME="ss3-2164527">
+<A HREF="#ss3-2164527">
+<H3>Sunroof Operation</H3></A><h4>Vent</h4><h4>Open to Vent Position</h4><p>When the sunroof is closed or in a partial vent position and the sunroof vent open switch becomes active, the sunroof shall begin to 'Express open' to the vent position. sunroof motion shall cease when the Sunroof reaches the vent position
+or if the sunroof sliding glass switch becomes active.</p>
+<h4>Close from Vent</h4><p>When the sunroof is in the vent position and the sunroof vent switch enters the 'Close' state, the sunroof will begin to express close the sunroof. Motion will continue until the sunroof has reached its fully closed position or if the sunroof sliding
+glass switch becomes active.</p>
+<h4>Sliding Class</h4><h4>Normal Open (Non-Express)</h4><p>When the sunroof is not in a vent position and the sunroof sliding glass switch is held in the 'Open' position, the sunroof will begin opening. Motion will continue until the switch returns to the 'Off' state or the vent switch transitions to any active
+state.</p>
+<h4>Sunroof Express Open</h4><p>When the sunroof control switch transitions to the 'Express Open' state and the sunroof is not in a vent position, the sunroof will express open until the controller determines the sunroof has reached the comfort stop position or the fully 'Open' position,
+the switch transitions to another state after first returning to the &lsquo;Off&rsquo; position, or the vent switch transitions to an active state.</p>
+<h4>Normal Close (Non-Express)</h4><p>When the sunroof switch is in the 'Close' state and the sunroof is not in the vent position, the controller will begin moving the sunroof in the close direction. If the vent switch becomes active the motor will be turned off.</p>
+<h4>Sunroof Express Close</h4><p>When the sunroof switch is in the 'Express Close' state and the sunroof is not in a vent position, the sunroof will express close until the controller determines the sunroof has reached the fully closed position, or the switch transitions to another state
+after first returning to the &lsquo;Off &rsquo; position. The sunroof motion will cease if the switch transitions back to the &lsquo;Close&rsquo; or &lsquo;Express Close&rsquo; state after returning to the &lsquo;Off &rsquo; position first or the vent switch
+transitions to any active state.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

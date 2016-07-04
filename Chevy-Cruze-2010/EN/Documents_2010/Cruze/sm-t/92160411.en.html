@@ -1,0 +1,163 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92160411.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Wiper/Washer System Description and Operation</H2>
+
+
+<A NAME="ss1-2160411">
+<A HREF="#ss1-2160411">
+<H3>Wiper/Washer System Components</H3></A><p>The wiper/washer system consists of the following electrical components:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Windshield Wiper Relay</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Windshield Wiper Speed Control Relay</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Windshield Washer Pump Relay</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Rain Sensor (optional)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Windshield Washer Fluid Pump</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Windshield Wiper Motor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Window Wiper/Washer Switch</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Body Control Module (BCM)</td></tr></table></div>
+
+
+<A NAME="ss2-2160411">
+<A HREF="#ss2-2160411">
+<H3>Windshield Wiper System </H3></A><p>The BCM determines the front wipe/wash system mode of operation by monitoring several signals from the front wipe/wash switch as indicated in the wiper switch.</p>
+<p>The front wipe/wash switch receives a reference ground signal from the BCM. Each input of the BCM provides a switched battery pull-up for each front wiper/washer switch output signal it receives. All the BCM inputs are recognized as active when the wiper
+switch provides a path to the referenced ground signal. The first signal received by the BCM is the result of 6&nbsp;resistors in the front wiper switch configured as a resistor ladder network. This signal is connected to a BCM analog to digital input. Depending
+on the function selected (High, Low, Intermittent 1 to 5, Mist, Off), the front wiper control switch connects a different set of resistors into the circuit resulting in different voltages appearing on the BCM A/D input. By monitoring this voltage, the BCM determines
+how to control the wiper motor On/Off Relay. It should be noted that High, Low, and Mist all have the same value on this signal circuit. The second signal received from the front wiper switch is active only when the front wiper switch is in the high speed wiper
+position. When the wiper switch is not in the high speed position, the switch is open and the signal circuit is pulled to battery by the BCM. When the wiper switch is in the high speed position, the switch pulls the circuit low. The BCM determines how to control
+the Wiper high/low speed relay from this input. The third signal received from the front wiper switch is from the momentary windshield wash control switch. When the washer switch is not active the switch is open and the signal circuit is pulled to battery by
+the BCM. When the washer switch is active, the switch pulls the circuit low. The BCM controls the windshield wash and windshield wash activated wiper operation based on this input.</p>
+<p> The BCM controls front wiper motor operation through two output signals and the monitoring of one input signal. The two outputs (one high side drive, one low side drive) are used to control two external wiper motor relays: front wiper motor on/off relay:
+which provides the wiper motor with battery power when it is activated by the high side drive signal (switched battery) from the BCM. When left deactivated, the normally closed contacts provide a ground to the wiper motor. Wiper high/low speed relay: when activated
+by a low side drive signal (ground) from the BCM, it switches the power supplied by the wiper motor's on/off relay to the motors high speed input. When left deactivated, the normally closed contacts connect the power supplied by the wiper motor's on/off relay
+to the motor's low speed input. The input used by the BCM is from the park switch located in the wiper motor assembly. When the wiper blades are not in the park position, the wiper park switch is open and the circuit is pulled up to battery by the BCM. When
+the wiper blades are in the park position at the bottom of the glass, the wiper park switch closes to ground pulling the park signal circuit low. </p>
+<p>To initiate low speed operation, the BCM only energizes the front wiper motor on/off relay. This allows battery voltage from the wiper fuse to be applied through the switched contacts of the wiper motor on/off relay, through the normally closed contacts
+of the wiper high/low speed relay, to the low speed control circuit of the windshield wiper motor.</p>
+<p>The BCM provides redundant circuitry which places battery power on its wiper motor on/off relay output with activation of its low assertion high speed wiper switch input. The BCM shall be capable of doing this, even if the module has lost all microprocessor
+control. This redundant circuit shall supply power while in the RUN and CRANK power modes. however; while in the CRANK power mode, the pass through shall only be active if the BCM is NOT in a computer operating properly state.</p>
+<p>To initiate high speed operation, the BCM energizes both the front wiper motor on/off relay and the wiper high/low speed relay. This allows battery voltage from the wiper fuse to be applied through the switched contacts of the wiper motor on/off relay,
+through the switched contacts of the wiper high/low speed relay, to the high speed control circuit of the windshield wiper motor.</p>
+<p> In order to perform an accurate read of the park switch and to ensure the wipers will come to rest while still in the park position, parking of the wipers only occurs while in a low speed wiper mode. This requires that if the wipers are performing a high
+speed wiper operation at the time they are required to park, the BCM shall transition the Wipers to low speed by deactivating the wiper high/low relay before attempting to park. In order to park the wipers, the BCM monitors the park circuit until the park switch
+pulls the park circuit to ground. At this time, the BCM will immediately deactivate the wiper motor on/off relay. The relay contacts will switch back to their normally closed position and will apply ground to the wiper motor power inputs through the normally
+closed contacts of the wiper high/low relay. This deactivates and dynamically brakes the wiper motor in the park position. When the wiper switch is turned to the OFF position while the wiper motor is somewhere in mid-cycle, the BCM will continue to operate the
+motor until the wipers reach the park position. If the BCM is running the wiper motor and does not see a state transition of the park switch after 8&nbsp;s, the wipers will stop immediately when the wiper switch is turned to OFF. If the ignition is turned
+OFF while the wipers are in mid-cycle, the wipers will stop immediately, regardless of position. The BCM will park the wipers next time the ignition is turned ON.</p>
+<p>The windshield wiper system MIST operation is identical to LOW speed operation, except that the MIST switch is a press and release type switch. When the wiper switch is moved to the MIST position and released, low speed wiper motor operation is started
+and will continue until 1 cycle is complete. If the wiper switch is moved to the MIST position and held, the wiper motor will operate in the LOW speed mode until the switch is released.</p>
+<p>Windshield wiper intermittent operation is a low speed wiper motor function with a variable delay interval between the wiper motor cycles. The duration of the delay is controlled by the front wiper control switch's intermittent 1 to intermittent 5 settings.
+The wiper operation is as follows:</p>
+
+<OL><LI TYPE="1"> The BCM will initiate a single wipe by activating its front wiper ON/OFF relay output.</LI>
+<LI TYPE="1"> At the completion of a single wipe, the BCM will park the wipers as described above.</LI>
+<LI TYPE="1">The BCM will then pause the wipers in their park position for the time duration associated with intermittent delay switch setting.</LI>
+<LI TYPE="1">When the delay time expires repeat Steps 1 and 3 until the system is turned off or taken out of intermittent mode. If the wiper switch is moved from a longer delay interval to a shorter delay interval, the BCM will command an immediate wipe cycle
+and reset the delay timer to the shorter delay interval.</LI>
+</OL>
+<p>Intermittent wiper operation may be vehicle speed sensitive. When enabled, the speed compensated intermittent feature causes the intermittent wiper delay intervals to become shorter as a function of increased speed. As vehicle speed is reduced the intervals
+will become closer to the predetermined.</p>
+<p>Intermittent wiper operation may be vehicle speed sensitive. When enabled, the speed compensated intermittent feature causes the intermittent wiper delay intervals to become shorter as a function of increased speed. As vehicle speed is reduced the intervals
+will become closer to the predetermined.</p>
+
+<A NAME="ss3-2160411">
+<A HREF="#ss3-2160411">
+<H3>Windshield Washer System</H3></A><p>The BCM controls the windshield wash operation and windshield wash activated wiper operation. When the BCM detects the activation of the momentary windshield wash control switch, it activates its washer pump relay drive output which supplies battery power
+to the coil of the washer pump relay. This energizes the relay, which switches battery power to the pump motor. The BCM will also activate continuous low speed windshield wipes as described above. Upon deactivation of the windshield wash control switch, the
+wiper control module (BCM) shall deactivate the wash motor and will also park the wiper motor as described above unless the drip wipe feature is enabled. On some vehicles the drip wipe feature will be enabled and cause the system to provide additional wiping
+of the windshield after the switch has been released and fluid is no longer being applied. The front wash feature may attempt to detect a stuck switch. When enabled, activation of the wash feature shall be limited to 10&nbsp;s.</p>
+
+<A NAME="ss4-2160411">
+<A HREF="#ss4-2160411">
+<H3>Rain Sense Mode and Rain Sense Indicator</H3></A><p>When this feature is activated on rain sense equipped vehicles, the wiper subsystem performs front windshield wipes according to the amount of moisture detected on the windshield. The BCM will control the wiper motor speed, as indicated above, based on
+wipe requests that it receives from a moisture sensor (rain sense module) which is mechanically attached to the windshield through a windshield mounted optic coupler. The system uses a master/slave configuration utilizing a Local Interconnect Network (LIN) based
+serial data communication system. The BCM is designated as the master, while the rain sense module is designated the slave. As the system master, the BCM uses the LIN serial communication bus to enable or disable rain sense module operation, communicate wiper
+control switch settings, and wiper motor position information to the rain sense module. The rain sense module requests wiper motor function, and provides the BCM with system status and diagnostic information for diagnostic reporting. When this feature is present,
+the BCM uses the front wiper control switch's intermittent 1 thru intermittent 5 settings to activate the system and to act as the automatic wiper sensitivity control. This allows the driver to adjust the moisture level at which the rain Sensor requests the
+BCM to automatically wipe the windshield. The intermittent 1 setting corresponds to the lowest sensitivity and intermittent 5 the highest sensitivity.</p>
+<p>Some vehicles (calibratable) shall display an AUTO front wiper indicator when the feature is active. This indicator shall notify the driver of the vehicle that the rain sensor is ready to perform automatic wiping of the windshield upon detection of moisture.</p>
+<p>This indicator shall be requested when all of the following are true: </p>
+
+<OL><LI TYPE="1">Power mode is RUN </LI>
+<LI TYPE="1">If single steering column switch equipped: The front wiper switch is SENSITIVITY 1 through SENSITIVITY 5.</LI>
+<LI TYPE="1">If dual steering column stalk equipped: The front wiper switch stalk angle is SENSITIVITY.</LI>
+</OL>
+<p>The above indicator shall be turned OFF when any of the following become true:</p>
+
+<OL><LI TYPE="1">Power mode becomes OFF, CRANK or ACCESSORY.</LI>
+<LI TYPE="1">Front wiper switch is changed to OFF, MIST, LOW or HIGH.</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

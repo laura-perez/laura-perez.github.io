@@ -1,0 +1,144 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92173044.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Data Link Communications Description and Operation</H2>
+
+
+<A NAME="ss1-2173044">
+<A HREF="#ss1-2173044">
+<H3>Circuit Description</H3></A><p>The communication among control modules is performed through the high speed GMLAN serial data circuit, the chassis high speed GMLAN serial data circuit, the mid speed GMLAN serial data circuit, and the low speed GMLAN serial data circuit. The modules that
+need real time communication are attached to the high speed GMLAN network and the chassis high speed GMLAN network. The body control module (BCM) is the gateway between the networks. The purpose of the gateway is to translate serial data messages between the
+high speed GMLAN bus and the low speed GMLAN bus. The gateway will interact with each network according to that network's transmission protocol. Refer to 
+
+<a href="92172041.en.html">Body Control System Description and Operation</a>  for more information
+about the gateway.</p>
+
+<A NAME="ss2-2173044">
+<A HREF="#ss2-2173044">
+<H3>High Speed GMLAN Circuit Description</H3></A><p>The data link connector (DLC) allows a scan tool to communicate with the high speed GMLAN serial data circuit. The serial data is transmitted on two twisted wires that allow speed up to 500&nbsp;Kb/s. The twisted pair is terminated with 120&nbsp;ohms
+resistors. The resistors are used to reduce noise on the high speed GMLAN bus during normal vehicle operation. The high speed GMLAN is a differential bus. The high speed GMLAN serial data bus (+) and high speed GMLAN serial data (-) are driven to opposite
+extremes from a rest or idle level. The idle level, which is approximately 2.5&nbsp;volts, is considered recessive transmitted data and is interpreted as a logic&nbsp;1. Driving the lines to their extremes, adds one volt to the high speed GMLAN serial data
+bus (+) and subtracts one&nbsp;volt from the high speed GMLAN serial data bus (-) wire. This dominant state is interpreted as a logic&nbsp;0. GMLAN network management supports selective start up and is based on virtual networks. A virtual network is
+a collection of signals started in response to a vehicle event. The starting of a virtual network signifies that a particular aspect of the vehicles functionality has been requested. A virtual network is supported by virtual devices, which represents a collection
+of signals owned by a single physical device. So, any physical device can have one or more virtual devices. The signal supervision is the process of determining whether an expected signal is being received or not. Failsofting is the ability to substitute a signal
+with a default value or a default algorithm, in the absence of a valid signal. Some messages are also interpreted as a heartbeat of a virtual device. If such a signal is lost, the application will set a no communication code against the respective virtual device.
+Note: a loss of serial data DTC does not represent a failure of the module that the code is set in.</p>
+
+<A NAME="ss3-2173044">
+<A HREF="#ss3-2173044">
+<H3>Chassis High Speed GMLAN Circuit Description</H3></A><p>The high speed GMLAN chassis expansion bus functions the same as the high speed GMLAN bus, and the two buses operate in parallel. The expansion chassis bus was added to reduce message congestion on the primary high speed bus. Since the high speed GMLAN
+chassis bus and primary high speed GMLAN bus operate in the same manner, the diagnostics for each are the same.</p>
+
+<A NAME="ss4-2173044">
+<A HREF="#ss4-2173044">
+<H3>Mid Speed GMLAN Circuit Description</H3></A><p>The data link connector (DLC) allows a scan tool to communicate with the mid speed GMLAN serial data circuit. Modules connected to the mid speed GMLAN serial data circuit monitor for serial data communications during normal vehicle operation. Operating
+information and commands are exchanged among the modules when the ignition switch is in any position other than OFF. The mid speed GMLAN serial data bus uses a terminating resistor that is in parallel with the mid speed GMLAN (+) and (-) circuits.</p>
+
+<A NAME="ss5-2173044">
+<A HREF="#ss5-2173044">
+<H3>Low Speed GMLAN Circuit Description</H3></A><p>The data link connector (DLC) allows a scan tool to communicate with the low speed GMLAN serial data circuit. The serial data is transmitted over a single wire to the appropriate control modules. The transmission speed for low speed GMLAN is up to 83.33&nbsp;
+Kb/s. Under normal vehicle operating conditions, the speed of the bus is 33.33&nbsp;Kb/s. This protocol produces a simple pulse train sent out over the low speed GMLAN serial data bus. When a module pulls the bus high, 5&nbsp;volts, this creates a dominant
+logic state or 0 on the bus. When the bus is pulled low, 0&nbsp;volts, it is translated as a recessive logic state or 1. To wake the control modules connected to the low speed GMLAN serial data bus, a high voltage wake up pulse is sent out over the bus, the
+voltage level of the pulse is +10&nbsp;volts. Modules connected to the low speed GMLAN bus can be part of a virtual network as described in the previous paragraph. The modules on the low speed GMLAN serial data bus are connected to the bus in a parallel configuration. </p>
+
+<A NAME="ss6-2173044">
+<A HREF="#ss6-2173044">
+<H3>Local Interconnect Network (LIN) Circuit Description</H3></A><p>Serial data is transmitted over a Local Interconnect Network (LIN) single wire network circuit bus between a primary control module and other control modules within a particular subsystem. If serial data communication is lost between any of the control
+modules on the LIN bus network, a no communication code against the non-communicating control module will be set.</p>
+
+<A NAME="ss7-2173044">
+<A HREF="#ss7-2173044">
+<H3>Data Link Connector (DLC)</H3></A><p>The data link connector (DLC) is a standardized 16-cavity connector. Connector design and location is dictated by an industry wide standard, and is required to provide the following:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;1 Low speed GMLAN communications terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;3 Mid speed GMLAN serial bus (+) terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;4 Scan tool power ground terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;5 Common signal ground terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;6 High speed GMLAN serial data bus (+) terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;11 Mid speed GMLAN serial bus (-) terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;12 Chassis high speed GMLAN serial bus terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;13 Chassis high speed GMLAN serial bus terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;14 High speed GMLAN serial data bus (-) terminal</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Pin&nbsp;16 Scan tool power, battery positive voltage terminal</td></tr></table></div>
+
+
+<A NAME="ss8-2173044">
+<A HREF="#ss8-2173044">
+<H3>Serial Data Reference</H3></A><p>The scan tool communicates over the various buses on the vehicle. When a scan tool is installed on a vehicle, the scan tool will try to communicate with every module that could be optioned into the vehicle. If an option is not installed on the vehicle,
+the scan tool will display No Comm for that options control module. In order to avert misdiagnoses of No Communication with a specific module, refer to 
+
+<a href="92196804.en.html">Data Link References</a>  for a list of modules, the buses they communicate
+with, and the RPO codes for a specific module.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

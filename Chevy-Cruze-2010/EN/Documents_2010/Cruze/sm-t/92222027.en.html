@@ -1,0 +1,208 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92222027.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC P0401 or P0402</H2>
+
+
+<A NAME="ss1-2222027">
+<A HREF="#ss1-2222027">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the 
+
+<a href="92092144.en.html">Diagnostic System Check - Vehicle</a>  prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review 
+
+<a href="91957622.en.html">Strategy Based Diagnosis</a>  for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91814794.en.html">Diagnostic Procedure Instructions</a>  provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2222027">
+<A HREF="#ss2-2222027">
+<H3>DTC Descriptor</H3></A><B>DTC&nbsp;P0401&nbsp;00:&nbsp;</B>Exhaust Gas Recirculation (EGR) Flow Insufficient Malfunction
+<br><br><B>DTC&nbsp;P0402&nbsp;00:&nbsp;</B>Exhaust Gas Recirculation (EGR) Flow Excessive Malfunction
+<br><br>
+<A NAME="ss3-2222027">
+<A HREF="#ss3-2222027">
+<H3>Circuit/System Description</H3></A><p>The exhaust gas recirculation (EGR) valve is controlled by the engine control module (ECM) through the EGR solenoid valve. Ignition&nbsp;1 voltage is supplied directly to the EGR solenoid valve. The ECM controls the solenoid by grounding the control
+circuit. When the EGR solenoid valve is commanded ON, vacuum from the vacuum pump is applied to the EGR valve.</p>
+
+<A NAME="ss4-2222027">
+<A HREF="#ss4-2222027">
+<H3>Conditions for Running the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition is ON, or the engine is running.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTCs run continuously when the above conditions are met.</td></tr></table></div>
+
+
+<A NAME="ss5-2222027">
+<A HREF="#ss5-2222027">
+<H3>Conditions for Setting the DTC</H3></A><h4>P0401</h4><p>The ECM detects the EGR flow is below a calibrated amount when the EGR is commanded ON.</p>
+<h4>P0402</h4><p>The ECM detects the EGR flow is above a calibrated amount when the EGR is commanded OFF.</p>
+
+<A NAME="ss6-2222027">
+<A HREF="#ss6-2222027">
+<H3>Action Taken When the DTC Sets</H3></A><p>DTCs&nbsp;P0401, and P0402 are Type&nbsp;B DTCs.</p>
+
+<A NAME="ss7-2222027">
+<A HREF="#ss7-2222027">
+<H3>Conditions for Clearing the DTC</H3></A><p>DTCs&nbsp;P0401, and P0402 are Type&nbsp;B DTCs.</p>
+
+<A NAME="ss8-2222027">
+<A HREF="#ss8-2222027">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92204646.en.html">Engine Controls Schematics</a></p>
+<h4>Connector End View Reference</h4><p>
+<a href="CELLREF_164814">Component Connector End Views</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91506352.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91465833.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>DTC Type Reference</h4><p>
+<a href="92223447.en.html">Powertrain Diagnostic Trouble Code (DTC) Type Definitions</a></p>
+<h4>Scan Tool Reference</h4><p>
+<a href="92202618.en.html">Control Module References</a> for scan tool information</p>
+<h4>Special Tools </h4><p><em>EN&nbsp;23738-A </em>Mity Vac
+ </p>
+<p>For equivalent regional tools, refer to 
+
+<a href="92222647.en.html">Fuel System Diagnosis</a> .</p>
+
+<A NAME="ss9-2222027">
+<A HREF="#ss9-2222027">
+<H3>Circuit/System Verification</H3></A>
+<OL><LI TYPE="1">Ignition ON, observe the DTC information with a scan tool. Verify that no other DTCs are set.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If any other DTCs are set, refer to 
+
+<a href="92222948.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a>  for further diagnosis.</td></tr></table></div>
+<LI TYPE="1"> DTCs&nbsp;P0401 or P0402 should not set.</LI>
+<LI TYPE="1">Command the throttle position from 0-100% with a scan tool. The throttle blade should respond to the scan tool commands.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the throttle body does not respond to the scan tool commands, refer to 
+
+<a href="92222074.en.html">DTC P02E0</a>  for further diagnosis.</td></tr></table></div>
+<LI TYPE="1">Command the EGR solenoid valve from 0-100% with a scan tool. The EGR solenoid valve should respond to the scan tool commands.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the EGR solenoid valve does not respond to the scan tool commands, refer to 
+
+<a href="92222038.en.html">DTC P0403</a>  for further diagnosis.</td></tr></table></div>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC to verify the DTC does not reset. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records data.</LI>
+</OL>
+
+<A NAME="ss10-2222027">
+<A HREF="#ss10-2222027">
+<H3>Circuit/System Testing</H3></A>
+<OL><LI TYPE="1">Ignition OFF, inspect for the following:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Intake system/charge air hoses for leaks/restrictions</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Exhaust system/turbo charger for leaks/restrictions</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Vacuum supply system for leaks or blockage</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Air filter for restrictions</td></tr></table></div>
+
+<LI TYPE="1">Disconnect the vacuum source from the EGR solenoid valve.</LI>
+<LI TYPE="1">Connect the 
+<em>EN&nbsp;23738-A </em>Mity Vac
+ to the EGR solenoid vacuum supply hose. Engine running, verify the vacuum is greater than 50&nbsp;kPa (7.25&nbsp;PSI).</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If less than the specified range, inspect the vacuum supply hose and filter for a leak or restriction. If the supply hose is normal, replace the vacuum pump.</td></tr></table></div>
+<LI TYPE="1">Connect the vacuum source to the EGR solenoid valve. Connect the 
+<em>EN&nbsp;23738-A </em>Mity Vac
+ to the EGR vacuum port on the EGR solenoid valve. Engine running, command
+the EGR solenoid valve to 5% with a scan tool. Verify the vacuum is at 0&nbsp;kPa (0&nbsp;PSI).</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified range, replace the EGR solenoid valve.</td></tr></table></div>
+<LI TYPE="1">Command the EGR solenoid valve to 100% with a scan tool. Verify the vacuum is greater than 50&nbsp;kPa (7.25&nbsp;PSI).</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If less than the specified range, test the ignition&nbsp;1 voltage circuit and the EGR position solenoid control circuit for greater than 5&nbsp;&#8486;. If the circuits test normal, replace the EGR solenoid valve.</td></tr></table></div>
+<LI TYPE="1">Connect the 
+J 23738-A  to the Q14&nbsp;Exhaust Gas Recirculation (EGR) Valve vacuum hose. Apply 25&nbsp;kPa (3.6&nbsp;PSI) of vacuum to the Q14&nbsp;Exhaust Gas Recirculation (EGR) Valve. Verify the EGR
+valve operation.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the EGR valve does not operate, inspect the vacuum hose for leaks or restrictions. If no leaks or restrictions are found, replace the Q14&nbsp;Exhaust Gas Recirculation (EGR) Valve.</td></tr></table></div>
+</OL>
+
+<A NAME="ss11-2222027">
+<A HREF="#ss11-2222027">
+<H3>Repair Instructions</H3></A><p>Perform the 
+
+<a href="91556771.en.html">Diagnostic Repair Verification</a>  after completing the diagnostic procedure.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92181461.en.html">Exhaust Gas Recirculation Valve Solenoid Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92181444.en.html">Exhaust Gas Recirculation Valve Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92181452.en.html">Vacuum Pump Assembly Replacement</a> </td></tr></table></div>
+
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

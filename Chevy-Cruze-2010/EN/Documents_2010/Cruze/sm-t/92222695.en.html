@@ -1,0 +1,309 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92222695.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC P0171 or P2096</H2>
+
+
+<A NAME="ss1-2222695">
+<A HREF="#ss1-2222695">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the 
+
+<a href="92092144.en.html">Diagnostic System Check - Vehicle</a>  prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review 
+
+<a href="91957622.en.html">Strategy Based Diagnosis</a>  for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91814794.en.html">Diagnostic Procedure Instructions</a>  provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2222695">
+<A HREF="#ss2-2222695">
+<H3>DTC Descriptor</H3></A><B>DTC&nbsp;P0171&nbsp;00:&nbsp;</B>Fuel Trim System Lean 
+<br><br><B>DTC&nbsp;P2096&nbsp;00:&nbsp;</B>Post Catalyst Fuel Trim System Low Limit
+<br><br>
+<A NAME="ss3-2222695">
+<A HREF="#ss3-2222695">
+<H3>Circuit/System Description</H3></A><p>The engine control module (ECM) controls the air/fuel metering system in order to provide the best possible combination of driveability, fuel economy, and emission control. Fuel delivery is controlled differently during open loop and closed loop. During
+open loop, the ECM determines fuel delivery based on sensor signals without heated oxygen sensor (HO2S) input. During closed loop, the ECM adds HO2S inputs and level of purge to calculate the short and long term fuel trim adjustments. If the HO2S indicates a
+lean condition, the fuel trim values will be above 0%. If the HO2S indicates a rich condition, the fuel trim values will be below 0%. The short term fuel trim values change rapidly in response to the HO2S voltage signals. The long term fuel trim makes rough
+adjustments in order to maintain an optimal air/fuel ratio. A block of memory cells contain information arranged in combinations of engine speed and engine load for a full range of vehicle operating conditions. The long term fuel trim diagnostic is based on
+an average of cells currently being used. The ECM selects the cells based on engine speed and load. The fuel trim diagnostic will conduct a test to determine if a rich failure actually exists or if more vapor than the customer may desire from the evaporative
+emission (EVAP) canister is causing a rich condition.</p>
+<p>The heating elements inside each heated oxygen sensor (HO2S) heat the sensor to bring the sensor up to operating conditions faster. This allows the system to enter closed loop earlier and the control module to calculate the air-to-fuel ratio sooner.</p>
+<p>The heated oxygen sensor (HO2S) utilizes the following circuits:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A signal circuit</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A low reference circuit</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An ignition voltage circuit</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A heater control circuit</td></tr></table></div>
+
+
+<A NAME="ss4-2222695">
+<A HREF="#ss4-2222695">
+<H3>Conditions for Running the DTC</H3></A>
+
+<h4>P0171&nbsp;00</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs&nbsp;P0030&nbsp;00, P0031&nbsp;00, P0032&nbsp;00, P0107&nbsp;00, P0108&nbsp;00, P0112&nbsp;00, P0113&nbsp;00, P0121&nbsp;00, P0122&nbsp;00, P0123&nbsp;00, P0128&nbsp;00, P0131&nbsp;00, P0132&nbsp;00, P0133&nbsp;00,
+P0134&nbsp;00, P0135&nbsp;00, P0137&nbsp;00, P0138&nbsp;00, P0140&nbsp;00, P0141&nbsp;00, P0201&nbsp;00 - P0204&nbsp;00, P0220&nbsp;00, P0222&nbsp;00, P0223&nbsp;00, P0300&nbsp;00-P0304&nbsp;00, P0442&nbsp;00, P0443&nbsp;00,
+P0446&nbsp;00, P0451&nbsp;00, P0452&nbsp;00, P0453&nbsp;00, P0454&nbsp;00, P0455&nbsp;00, P0461&nbsp;00, P0462&nbsp;00, P0463&nbsp;00, P0496&nbsp;00, P0506&nbsp;00, P0507&nbsp;00, P2101&nbsp;00, P2119&nbsp;00, P2122&nbsp;00, P2123&nbsp;00,
+P2127&nbsp;00, P2128&nbsp;00, P2138&nbsp;00, P2176&nbsp;00, P2A00&nbsp;00, are not set.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Where applicable DTCs P2270&nbsp;00, P2271&nbsp;00, P2272&nbsp;00, P2A01&nbsp;00, are not set.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The loop status parameter indicates closed.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The fuel trim learn is enabled.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine coolant temperature (ECT) is between -38 to +150&deg;C (-36.4 to +302&deg;F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The intake air temperature (IAT) is between -38 to +150&deg;C (-36.4 to +302&deg;F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The manifold absolute pressure (MAP) is between 5-255&nbsp;kPa (0.73-37&nbsp;PSI).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The vehicle speed is less than 134&nbsp;km/h (83&nbsp;MPH).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine speed is between 400-6000&nbsp;RPM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The barometric pressure (BARO) is more than 70&nbsp;kPa (10&nbsp;PSI).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs&nbsp;P0171&nbsp;00 and P2096&nbsp;00 run continuously when the above conditions have been met.</td></tr></table></div>
+
+
+
+<h4>P2096&nbsp;00</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs P000A&nbsp;00, P000B&nbsp;00, P0010&nbsp;00, P0011&nbsp;00, P0013&nbsp;00, P0016&nbsp;00, P0017&nbsp;00, P0030&nbsp;00, P0031&nbsp;00, P0032&nbsp;00, P0106&nbsp;00, P0107&nbsp;00, P0108&nbsp;00, P0117&nbsp;00, P0118&nbsp;00,
+P0119&nbsp;00, P0121&nbsp;00, P0122&nbsp;00, P0123&nbsp;00, P0131&nbsp;00, P0132&nbsp;00, P0133&nbsp;00, P0137&nbsp;00, P0138&nbsp;00, P0139&nbsp;00, P0140&nbsp;00, P0141&nbsp;00, P0171&nbsp;00, P0172&nbsp;00, P0201&nbsp;00, P0202&nbsp;00,
+P0203&nbsp;00, P0204&nbsp;00, P0221&nbsp;00, P0222&nbsp;00, P0223&nbsp;00, P0261&nbsp;00, P0262&nbsp;00, P0264&nbsp;00, P0265&nbsp;00, P0267&nbsp;00, P0268&nbsp;00, P0270&nbsp;00, P0271&nbsp;00, P0300&nbsp;00, P0301&nbsp;00, P0302&nbsp;00,
+P0303&nbsp;00, P0304&nbsp;00, P0313&nbsp;00, P0335&nbsp;00, P0336&nbsp;00, P0340&nbsp;00, P0341&nbsp;00, P0365&nbsp;00, P0366&nbsp;00, P0420&nbsp;00, P0443&nbsp;00, P0458&nbsp;00, P0459&nbsp;00, P1106&nbsp;00, P2088&nbsp;00, P2089&nbsp;00,
+P2090&nbsp;00, P2091&nbsp;00, P2100&nbsp;00, P2101&nbsp;00, P2176&nbsp;00, P2270&nbsp;00, P2271&nbsp;00, P2297&nbsp;00, P2300&nbsp;00, P2301&nbsp;00, P2303&nbsp;00, P2304&nbsp;00, P2306&nbsp;00, P2307&nbsp;00, P2309&nbsp;00, P2310&nbsp;00,
+P2A00&nbsp;00, P2A01&nbsp;00 are not set.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition is ON.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The evaporative emission (EVAP) system is not purging.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The post catalyst fuel trim is enabled.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">These DTCs run continuously when the above conditions have been met.</td></tr></table></div>
+
+
+<A NAME="ss5-2222695">
+<A HREF="#ss5-2222695">
+<H3>Conditions for Setting the DTC</H3></A>
+
+<h4>P0171&nbsp;00</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The long term fuel trim weighted average value is more or less than a calibrated value.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The above condition is present for approximately 3&nbsp;min after the conditions for running the DTC have been met.</td></tr></table></div>
+
+<h4>P2096&nbsp;00</h4><p>The above condition is present for approximately 3&nbsp;min after the conditions for running the DTC have been met.</p>
+
+<A NAME="ss6-2222695">
+<A HREF="#ss6-2222695">
+<H3>Action Taken When the DTC Sets</H3></A><p>DTCs&nbsp;P017&nbsp;001, P2096&nbsp;00 are type&nbsp;B DTCs.</p>
+
+<A NAME="ss7-2222695">
+<A HREF="#ss7-2222695">
+<H3>Conditions for Clearing the DTC</H3></A><p>DTCs&nbsp;P0171&nbsp;00, P2096&nbsp;00 are type&nbsp;B DTCs.</p>
+
+<A NAME="ss8-2222695">
+<A HREF="#ss8-2222695">
+<H3>Diagnostic Aids</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">On vehicles equipped with a vacuum brake booster, rapid brake pedal cycling may imitate a vacuum leak.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A failed HO2S will not cause DTC P2096&nbsp;00 to set without the occurrence of circuit related HO2S DTCs. Do not replace an HO2S to address this DTC.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An exhaust system leak that may not be audible can set these DTCs.</td></tr></table></div>
+
+
+<A NAME="ss9-2222695">
+<A HREF="#ss9-2222695">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92204644.en.html">Engine Controls Schematics</a></p>
+<h4>Connector End View Reference</h4><p> 
+
+<a href="CELLREF_164814">Component Connector End Views</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91506352.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91465833.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>DTC Type Reference</h4><p> 
+
+<a href="92223447.en.html">Powertrain Diagnostic Trouble Code (DTC) Type Definitions</a></p>
+<h4>Scan Tool Reference</h4><p>
+<a href="92202618.en.html">Control Module References</a> for scan tool information</p>
+
+<A NAME="ss10-2222695">
+<A HREF="#ss10-2222695">
+<H3>Circuit/System Verification</H3></A>
+<p><font color=brown><b>Note:&nbsp;</b>Disregard any transmission symptoms, antilock brake system (ABS) indicators, and traction control system indicators until any fuel trim faults are repaired. A fuel trim fault may cause default actions such as harsh shifts and illumination
+of the ABS/traction control system indicators.
+</font></p>
+<OL><LI TYPE="1">Verify that other DTCs are not set.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If any DTCs are set, refer to 
+
+<a href="92222948.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a> .</td></tr></table></div>
+<LI TYPE="1">Allow the engine to reach operating temperature. With the engine running, observe the HO2S Sensor&nbsp;1 with a scan tool. The HO2S 1 value should vary from approximately 40&nbsp;mV to approximately 900&nbsp;mV, and respond to fueling changes.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the value does not vary from approximately 40&nbsp;mV to approximately 900&nbsp;mV, refer to 
+
+<a href="92222691.en.html">DTC P0137-P0140, P2270, P2271, or P2A01</a> .</td></tr></table></div>
+
+<p><font color=brown><b>Note:&nbsp;</b>The EVAP purge enablement may cause the fuel trim to be momentarily outside the normal range
+</font></p><LI TYPE="1">The normal scan tool Short Term Fuel Trim parameter should be between +10 to -10%, with near 0% the optimum, with the engine running at operating temperature.</LI>
+<LI TYPE="1">The scan tool Long Term Fuel Trim parameter should be between +10 to -10%, with near 0% the optimum, with the engine running at operating temperature.</LI>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC. You may also operate the vehicle within the conditions that you observed from the freeze frame/failure records data.</LI>
+</OL>
+
+<A NAME="ss11-2222695">
+<A HREF="#ss11-2222695">
+<H3>Circuit/System Testing </H3></A>
+<p><font color=brown><b>Note:&nbsp;</b>Allow the engine to reach operating temperature. With the engine running, observe the Long Term Fuel Trim parameter with a scan tool. The value should be less than approximately 18% with the engine running at operating temperature.
+</font></p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top"> If the value is not less than 18%, inspect for the following:</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">With the ignition ON and the engine OFF, observe the scan tool MAP Sensor parameter. The scan tool MAP Sensor pressure reading should be within the range specified for your altitude. Refer to 
+
+<a href="90839729.en.html">Altitude Versus Barometric Pressure</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8658;</td><td valign="top">If the B74&nbsp;Manifold Absolute Pressure Sensor does not indicate the correct barometric pressure, refer to 
+
+<a href="92222580.en.html">DTC P0107 or P0108</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">With the engine idling and the transmission in the park or neutral position, observe the scan tool MAP Sensor parameter. The scan tool MAP Sensor parameter should be between 19-42&nbsp;kPa (2.8-6.1&nbsp;PSI).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8658;</td><td valign="top">If the scan tool MAP sensor parameter is not between 19-42&nbsp;kPa (2.8-6.1&nbsp;PSI), refer to 
+
+<a href="92222580.en.html">DTC P0107 or P0108</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Vacuum hoses for splits, kinks, and improper connections</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Insufficient amount of fuel in the tank</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Low fuel pressure. Refer to 
+
+<a href="92222644.en.html">Fuel System Diagnosis</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Fuel contamination. Refer to 
+
+<a href="92172150.en.html">Alcohol/Contaminants-in-Fuel Diagnosis</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Malfunctioning fuel injectors. Refer to 
+
+<a href="92172782.en.html">Fuel Injector Diagnosis</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Missing, loose, or leaking exhaust components from the HO2S forward. Refer to 
+
+<a href="92169708.en.html">Symptoms - Engine Exhaust</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Vacuum leaks at the intake manifold, the throttle body, the brake booster hose, and the injector O-rings</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The air induction system and the air intake ducts for leaks or for a missing air filter element</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A cracked EVAP canister</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Evaporative pipes obstructed or leaking</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The crankcase ventilation system for leaks. Refer to 
+
+<a href="92173502.en.html">Crankcase Ventilation System Inspection/Diagnosis</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The HO2S for improper installation and for electrical wires or connectors that may have contacted the exhaust system</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The B52A&nbsp;Heated Oxygen Sensor 1 sensor&nbsp;1 signal circuit open, shorted to ground, or shorted to the low reference circuit</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The B52A&nbsp;Heated Oxygen Sensor 1 sensor&nbsp;1 low signal circuit for an open circuit or high resistance</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Malfunctioning engine components. Refer to 
+
+<a href="92173664.en.html">Symptoms - Engine Mechanical</a> .</td></tr></table></div>
+
+<p>Repair or replace as necessary.</p>
+
+<A NAME="ss12-2222695">
+<A HREF="#ss12-2222695">
+<H3>Repair Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92164032.en.html">Air Cleaner Assembly Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92164026.en.html">Air Cleaner Element Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92177391.en.html">Evaporative Emission Canister Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92173477.en.html">Fuel Injector Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92173265.en.html">Fuel Tank Fuel Pump Module Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92170407.en.html">Fuel System Cleaning</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92166605.en.html">Heated Oxygen Sensor Replacement - Sensor 1</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92166608.en.html">Manifold Absolute Pressure Sensor Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92166600.en.html">Throttle Body Assembly Replacement</a> </td></tr></table></div>
+
+
+<A NAME="ss13-2222695">
+<A HREF="#ss13-2222695">
+<H3>Repair Verification</H3></A>
+<OL>
+<p><font color=brown><b>Note:&nbsp;</b>After repairs, use the scan tool fuel trim reset function in order to reset the long term fuel trim values.
+</font></p><LI TYPE="1">Install any components or connectors that have been removed or replaced during diagnosis.</LI>
+<LI TYPE="1">Perform any adjustment, programming, or setup procedures that are required when a component or module is removed or replaced.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+
+<p><font color=brown><b>Note:&nbsp;</b>Do not clear codes with the engine running. DTCs may reset in the same ignition cycle
+</font></p><LI TYPE="1">Clear the DTCs.</LI>
+<LI TYPE="1">Turn OFF the ignition for 60&nbsp;s.</LI>
+<LI TYPE="1">Start the engine.</LI>
+<LI TYPE="1">Duplicate the Conditions for Running the DTC and use freeze frame/failure records, if applicable, in order to verify the DTC does not reset. If the DTC resets or another DTC is present, refer to 
+
+<a href="92222948.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a>  and perform the appropriate
+diagnostic procedure.</LI>
+<LI TYPE="1">In order to ensure that the performance of the catalyst has not been affected by the fault that set this DTC, perform the repair verification for DTC&nbsp;P0420&nbsp;00. Refer to 
+
+<a href="92222555.en.html">DTC P0420</a> .</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

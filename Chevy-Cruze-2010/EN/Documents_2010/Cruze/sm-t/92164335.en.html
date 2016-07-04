@@ -1,0 +1,296 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92164335.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Automatic HVAC Description and Operation</H2>
+
+
+<A NAME="ss1-2164335">
+<A HREF="#ss1-2164335">
+<H3>Automatic HVAC Description and Operation</H3></A><p>The air temperature and the air delivery description and operation are divided into eight areas:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">HVAC Control Components</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Air Speed </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Air Delivery </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Heating and A/C Operation</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Recirculation Operation </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Automatic Operation </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Engine Coolant</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A/C Cycle</td></tr></table></div>
+
+
+<A NAME="ss2-2164335">
+<A HREF="#ss2-2164335">
+<H3> HVAC Control Components</H3></A><h4>HVAC Control</h4><p>The HVAC control contains all switches, which are required to control the functions of HVAC and serve as interface between the operator and the HVAC control module. The selected values are passed to the HVAC control module via LIN-Bus.</p>
+<h4>HVAC Control Module</h4><p>The HVAC control module is a GMLAN device that interfaces between the operator and the HVAC system to maintain and control desired air temperature and air distribution settings. The battery positive voltage circuit provides power that the HVAC control
+module uses for keep alive memory. If the battery positive voltage circuit loses power, all HVAC DTCs and settings will be erased from keep alive memory. The body control module (BCM), which is the vehicle mode master, provides a device ON-Signal. The HVAC control
+module provides blower, air delivery mode and air temperature settings.</p>
+<p>The HVAC control module supports the following features:</p>
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Feature</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Availability</P>
+</TH></TR>
+<TR>
+<TD ROWSPAN=1><P>Afterblow</P>
+</TD><TD ROWSPAN=1><P>Available if reprogrammed by the technician</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1><P>Purge</P>
+</TD><TD ROWSPAN=1><P>Yes</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1><P>Personalization</P>
+</TD><TD ROWSPAN=1><P>Yes</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1><P>Actuator Calibration</P>
+</TD><TD ROWSPAN=1><P>Yes</P>
+</TD></TR>
+</TABLE><h4>Mode Actuator</h4><p>The mode actuator is a 5-wire stepper motor. The HVAC control module supplies a 12&nbsp;V reference voltage to the stepper motor and energizes the 4 stepper motor coils with a pulsed ground signal. The stepper motor puts the mode flap into the calculated
+position in order to reach the selected position. The null point of the stepper motor will be calibrated, if the stepper motor is new. When the stepper motor is calibrated, the HVAC control module can drive the applicable coil to reach exactly the desired position
+of the flap.</p>
+<h4>Air Temperature Actuator</h4><p>The air temperature actuator is a 5-wire stepper motor. The HVAC control module supplies a 12&nbsp;V reference voltage to the stepper motor and energizes the 4 stepper motor coils with a pulsed ground signal. The stepper motor puts the mixed air flap
+into the calculated position, in order to reach the selected temperature. The null point of the stepper motor will be calibrated, if the stepper motor is new. When the stepper motor is calibrated, the HVAC control module can drive the applicable coil to reach
+exactly the desired position of the flap.</p>
+<h4>Recirculation Actuator</h4><p>The recirculation actuator is a 5-wire stepper motor. The HVAC control module supplies a 12&nbsp;V reference voltage to the stepper motor and energizes the 4 stepper motor coils with a pulsed ground signal. The stepper motor puts the recirculation flap
+into the calculated position in order to reach the desired position. The null point of the stepper motor will be calibrated, if the stepper motor is new. When the stepper motor is calibrated, the HVAC control module can drive the applicable coil to reach exactly
+the desired position of the flap.</p>
+<h4>Blower Motor Control Processor</h4><p>The blower motor control processor controls the speed of the blower motor by increasing or decreasing the voltage drop on the ground side of the blower motor. The HVAC control module provides a low side pulse width modulation (PWM) signal to the blower
+motor control processor via the blower motor speed control circuit. As the requested blower speed increases, the HVAC control module increases the amount of time that the speed signal is modulated to ground. As the requested blower speed decreases, the HVAC
+control module decreases the amount of time that the signal is modulated to ground.</p>
+<h4>Air Quality Sensor</h4><p>The HVAC control module detects exhaust gas by an air quality sensor. The air quality sensor is a 3-wire sensor with an ignition voltage circuit, a ground circuit and a signal circuit. The HVAC control module evaluates the information of the air quality
+sensor and closes the recirculation flap, while the air quality sensor switch is pressed, as soon as the concentration of pollutants exceeds a predefined value.</p>
+<h4>Duct Temperature Sensors</h4><p>The air temperature sensors are 2-wire negative temperature co-efficient thermistors. The sensors operate within a temperature range of -40 to +85&deg;C (-40 to +185&deg;F). The sensors are installed in the air distribution ducts and measure
+the temperature of the air that streams from the ducts. The HVAC control module uses these values to calculate the mixed air flap position.</p>
+<h4>Evaporator Temperature Sensor</h4><p>The evaporator temperature sensor is a 2-wire negative temperature co-efficient thermistor. The sensor operates within a temperature range of -40 to +85&deg;C (-40 to +185&deg;F). The sensor is installed at the evaporator and measures its temperature.
+If the temperature drops under 3&deg;C (38&deg;F), the compressor will be switched off in order to prevent a frozen evaporator.</p>
+<h4>A/C Refrigerant Pressure Sensor</h4><p>The A/C refrigerant pressure sensor is a 3-wire piezoelectric pressure transducer. A 5&nbsp;V reference voltage, low reference, and signal circuits enable the sensor to operate. The A/C pressure signal can be between 0.2-4.8&nbsp;V. When the
+A/C refrigerant pressure is low, the signal value is near 0&nbsp;V. When the A/C refrigerant pressure is high, the signal value is near 5&nbsp;V. The engine control module (ECM) converts the voltage signal to a pressure value. When pressure is too high or
+too low, the ECM will not allow the A/C compressor clutch to engage.</p>
+<h4>A/C Compressor</h4><p>The A/C compressor is belt driven and operates when the magnetic clutch is engaged. When the A/C switch is pressed, the HVAC control module sends an A/C request message to the ECM via CAN-Bus. Therefore the ECM grounds the A/C compressor clutch relay control
+circuit, which will switch the A/C compressor clutch relay. With the relay contacts closed, battery voltage is supplied to the A/C compressor clutch. The A/C compressor clutch will be activated.</p>
+<h4>Windshield Temperature and Inside Moisture Sensor</h4><p> The windshield temperature and inside moisture sensor includes the relative humidity sensor, windshield temperature sensor and humidity sensing element temperature sensor.</p>
+<p>This sensor assembly provides information about:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Relative humidity level at windshield (compartment side)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Temperature of the windshield inside (compartment side)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Temperature of the humidity sensor element</td></tr></table></div>
+
+<p>The relative humidity sensor measures the relative humidity of the compartment side of the windshield. It also detects the temperature of the windshield surface on the passenger compartment side. Both values are used as control inputs for the HVAC control
+module application to calculate the fog risk on windshield compartment side and ability to reduce fuel consumption by decreasing A/C compressor power to a minimum without causing any fog. The sensor will also enable partial recirculation mode in order to improve
+heat-up performance of the passenger compartment under cold ambient temperature conditions without the risk of mist build-up on the windshield. The humidity sensor element temperature sensor supplies the temperature of the humidity sensor element. It is only
+needed if the thermal contact between the humidity sensing element and the inside windshield surface is not sufficient.</p>
+<h4>Ambient Light/Sunload Sensor</h4><p>The ambient light/sunload sensor includes the sunload sensor and passenger compartment temperature sensor.</p>
+<p>This sensor assembly provides information about:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Sun heat intensity</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Passenger compartment temperature</td></tr></table></div>
+
+<p>The solar sensor is connected to ground and to a 5&nbsp;V stabilized voltage supply through the HVAC control module. As the sunload increases, the sensor signal voltage also increases and vice versa. The signal varies between 1.4-4.5&nbsp;V and
+is provided to the HVAC control module.</p>
+<p>The passenger compartment temperature sensor is a negative temperature co-efficient thermistor. A signal and low reference circuit enables the sensor to operate. As the air temperature increases, the sensor resistance decreases. The sensor signal varies
+between 0-5&nbsp;V.</p>
+<p>Bright or high intensity light causes the vehicles interior temperature to increase. The HVAC system compensates for the increased temperature by diverting additional cool air into the vehicle.</p>
+
+<A NAME="ss3-2164335">
+<A HREF="#ss3-2164335">
+<H3>Air Speed</H3></A><p>The blower control switch is part of the HVAC control. The selected value of the blower switch position is sent to the HVAC control module via LIN-Bus.</p>
+<p>The blower motor control module is an interface between HVAC control module and blower motor. The blower motor control module regulates supply voltage and ground circuits to blower motor. The HVAC control module provides a PWM signal to the blower motor
+control module in order to command the desired blower motor speed. The blower motor control module supplies battery voltage to the blower motor and uses the blower motor ground as a low side control to adjust the blower motor speed. The voltage amounts between
+2-13&nbsp;V and changes linear to the height of the PWM signal.</p>
+
+<A NAME="ss4-2164335">
+<A HREF="#ss4-2164335">
+<H3>Air Delivery</H3></A><p>The HVAC control module controls the distribution of air by the use of recirculation and mode actuator. The modes that may be selected are:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Defrost</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Defog</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Panel</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Floor</td></tr></table></div>
+
+<p>The desired air distribution mode can be selected with the air distribution switches at the HVAC control. The HVAC control delivers the values to the HVAC control module via LIN-Bus. The HVAC control module controls the air distribution actuator so that
+it drives the flap to the calculated position. Depending on the position of the flap, air is distributed through various ducts leading to the outlets in the dash. Turning the mode flap to the defrost position, the HVAC control module will move the recirculation
+actuator to outside air, reducing window fogging. When defrost is selected, the blower motor will be activated, regardless of the coolant temperature. The HVAC control module enables a high volume of air delivered to the front defrost vents. A/C is available
+in all modes.</p>
+<p>The rear window defogger does not affect the HVAC system.</p>
+
+<A NAME="ss5-2164335">
+<A HREF="#ss5-2164335">
+<H3> Heating and A/C Operation</H3></A><p>The purpose of the heating and A/C system is to provide heated and cooled air to the interior of the vehicle. The A/C system will also remove humidity from the interior and reduce windshield fogging. Regardless of the temperature setting, the following
+can affect the rate that the HVAC system can achieve the desired temperature:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Recirculation actuator setting</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Difference between inside and desired temperature</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Blower motor speed setting</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Mode setting</td></tr></table></div>
+
+<p>Pressing the A/C switch or AUTO switch enables the HVAC control module to request A/C compressor engagement and turn ON the A/C switch LED respectively the AUTO switch LED if the AUTO switch is pressed. The HVAC control module sends a message to the engine
+control module (ECM) for A/C compressor engagement. The ECM will provide a ground for the A/C compressor relay enabling it to close its internal contacts to send battery voltage to the A/C compressor clutch coil. The A/C compressor diode will prevent a voltage
+peak, resulting from the collapse of the magnetic field of the coil, from entering the vehicle electrical system when the compressor is disengaged.</p>
+<p>The following conditions must be met in order to activate the A/C compressor:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Battery voltage is between 9-18&nbsp;V.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Engine coolant temperature is less than 124&deg;C (255&deg;F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Engine speed is greater than 600&nbsp;RPM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Engine speed is less than 5&nbsp;500&nbsp;RPM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A/C high side pressure is between 269-2&nbsp;929&nbsp;kPa (39-425&nbsp;PSI).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Throttle position is less than 100%.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Evaporator temperature is greater than 3&deg;C (38&deg;F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">ECM does not detect immoderate torque load.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">ECM does not detect insufficient idle quality.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ambient temperature is above 1&deg;C (34&deg;F).</td></tr></table></div>
+
+<p>The sensor information is used by the ECM to determine the following:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The A/C high side pressure</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An A/C system load on the engine</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The heat load at the A/C condenser</td></tr></table></div>
+
+<p>The air streams into the passenger compartment through the heater core and the evaporator core. The air temperature actuator drives the mixed air flap to induce the airflow. If the interior temperature should be increased, the mixed air flap is put into
+the position in which more air streams through the heater core. If the interior temperature should be decreased, the mixed air flap is put into the position in which more air streams through the evaporator core. </p>
+
+<A NAME="ss6-2164335">
+<A HREF="#ss6-2164335">
+<H3>Recirculation Operation</H3></A><p>The recirculation switch is part of the HVAC control. The selected recirculation switch position is sent to the HVAC control module via LIN-Bus. The HVAC control module controls the air intake through the recirculation actuator. The recirculation switch
+closes the recirculation flap in order to circulate the air within the vehicle. Through renewed selection of the recirculation switch, the recirculation flap is opened again in order to route outside air into the vehicle.</p>
+<p>Recirculation is only available if the defrost mode is not active. When the defrost mode is active, the recirculation actuator opens the recirculation flap and outside air is circulated to the windshield to reduce fogging.</p>
+<p>The HVAC control module evaluates the information of the air quality sensor and closes the recirculation flap while the air quality sensor switch is pressed, as soon as the concentration of pollutants exceeds a predefined value.</p>
+<p>In automatic mode the values of the windshield temperature and inside moisture sensor are used as control inputs for the HVAC control module application to calculate the fog risk on the passenger compartment side of the windshield. The A/C compressor and
+the defrost mode are activated to prevent or remove fog on the passenger compartment side of the windshield.</p>
+
+<A NAME="ss7-2164335">
+<A HREF="#ss7-2164335">
+<H3>Automatic Operation</H3></A><p>In automatic operation, the HVAC control module maintains the comfort level inside of the vehicle by controlling the A/C compressor clutch, the blower motor, the air temperature actuators, mode actuator and recirculation actuator.</p>
+<p>To put the HVAC system in automatic mode, the following is required:</p>
+
+<OL><LI TYPE="1">The auto switch must be activated.</LI>
+<LI TYPE="1">The air temperature switch must be in any other position than full hot or full cold position.</LI>
+</OL>
+<p>Once the desired temperature is reached, the blower motor, mode, recirculation and temperature actuators automatically adjust to maintain the temperature selected. The HVAC control module performs the following functions to maintain the desired air temperature:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Monitors the following sensors:</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Ambient air temperature sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Lower left air temperature sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Lower right air temperature sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Upper left air temperature sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Upper right air temperature sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Windshield temperature and inside moisture sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Ambient light/sunload sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Air quality sensor</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Regulate blower motor speed</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Position the air temperature actuator</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Position the mode actuator</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Position the recirculation actuator</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Request A/C operation</td></tr></table></div>
+
+<p>When the warmest position is selected in automatic operation the blower speed will increase gradually until the vehicle reaches normal operating temperature. When normal operating temperature is reached the blower stays on high speed and the air temperature
+actuators stays in the full heat position.</p>
+<p>When the coldest position is selected in automatic operation the blower stays on high and the air temperature actuators stay in full cold position. The mode actuator remains in the panel position and the recirculation actuator will remain in the recirculation
+position.</p>
+<p>Under cold ambient temperatures, the automatic HVAC system provides heat in the most efficient manner. The operator can select an extreme temperature setting but the system will not warm the vehicle any faster. Under warm ambient temperatures, the automatic
+HVAC system also provides air conditioning in the most efficient manner. Selecting an extreme cool temperature will not cool the vehicle any faster.</p>
+<p>The HVAC control module evaluates the information of the air quality sensor and closes the recirculation flap while the air quality sensor switch is pressed, as soon as the concentration of pollutants exceeds a predefined value.</p>
+<p>In automatic mode the values of the windshield temperature and inside moisture sensor are used as control inputs for the HVAC control module application to calculate the fog risk on the passenger compartment side of the windshield and ability to reduce
+fuel consumption by decreasing A/C compressor power to a minimum without causing any fog. The A/C compressor and the defrost mode are activated to prevent or remove fog on the passenger compartment side of the windshield. The sensor will also enable partial
+recirculation mode in order to improve heat-up performance of the passenger compartment under cold ambient temperature conditions without the risk of mist build-up on the windshield. </p>
+
+<A NAME="ss8-2164335">
+<A HREF="#ss8-2164335">
+<H3> Engine Coolant</H3></A><p>Engine coolant is the essential element of the heating system. The thermostat controls the normal engine operating coolant temperature. The thermostat also creates a restriction for the cooling system that promotes a positive coolant flow and helps prevent
+cavitation.</p>
+<p>Coolant enters the heater core through the inlet heater hose, in a pressurized state. The heater core is located inside the HVAC control module. The ambient air drawn through the HVAC control module absorbs the heat of the coolant flowing through the heater
+core. Heated air is distributed to the passenger compartment, through the HVAC control module, for passenger comfort. Opening or closing the air temperature flap controls the amount of heat delivered to the passenger compartment. The coolant exits the heater
+core through the return heater hose and recirculates back to the engine cooling system.</p>
+
+<A NAME="ss9-2164335">
+<A HREF="#ss9-2164335">
+<H3> A/C Cycle</H3></A><p>Refrigerant is the key element in an air conditioning system. R-134a is presently the only Environmental Protection Agency approved refrigerant for automotive use. R-134a is a very low temperature gas that can transfer the undesirable heat and moisture
+from the passenger compartment to the outside air.</p>
+<p>The compressor builds pressure on the vapor refrigerant. Compressing the refrigerant also adds heat to the refrigerant. The refrigerant is discharged from the compressor, through the discharge hose, and forced to flow to the condenser and then through
+the balance of the A/C system. The A/C system is mechanically protected with the use of a high pressure relief valve. If the A/C refrigerant pressure sensor fails or if the refrigerant system becomes restricted and refrigerant pressure continued to rise, the
+high pressure relief will pop open and release refrigerant from the system.</p>
+<p>Compressed refrigerant enters the condenser in a high temperature, high pressure vapor state. As the refrigerant flows through the condenser, the heat of the refrigerant is transferred to the ambient air passing through the condenser. Cooling the refrigerant
+causes the refrigerant to and change from a vapor to a liquid state. </p>
+<p>The condenser is located in front of the radiator for maximum heat transfer. The condenser is made of aluminium tubing and aluminum cooling fins, which allows rapid heat transfer for the refrigerant. The semi-cooled liquid refrigerant exits the condenser
+and flows through the liquid line, to the orifice tube.</p>
+<p>The orifice tube is located in the liquid line between the condenser and the evaporator. The orifice tube is the dividing point for the high and the low pressure sides of the A/C system. As the refrigerant passes through the orifice tube, the pressure
+on the refrigerant is lowered. Due to the pressure differential on the liquid refrigerant, the refrigerant will begin to vaporize at the orifice tube. The orifice tube also meters the amount of liquid refrigerant that can flow into the evaporator.</p>
+<p>Refrigerant exiting the orifice tube flows into the evaporator core in a low pressure, liquid state. Ambient air is drawn through the HVAC control module and passes through the evaporator core. Warm and moist air will cause the liquid refrigerant boil
+inside of the evaporator core. The boiling refrigerant absorbs heat from the ambient air and draws moisture onto the evaporator. The refrigerant exits the evaporator through the suction line and back to the A/C compressor, in a vapor state, and completing the
+A/C cycle of heat removal. At the A/C compressor, the refrigerant is compressed again and the cycle of heat removal is repeated.</p>
+<p>The conditioned air is distributed through the HVAC control module for passenger comfort. The heat and moisture removed from the passenger compartment will also change form, or condense, and is discharged from the HVAC control module as water.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

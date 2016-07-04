@@ -1,0 +1,220 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92172782.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Fuel Injector Diagnosis (with Scan Tool)</H2>
+
+
+<A NAME="ss1-2172782">
+<A HREF="#ss1-2172782">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the 
+
+<a href="92092144.en.html">Diagnostic System Check - Vehicle</a>  prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review 
+
+<a href="91957622.en.html">Strategy Based Diagnosis</a>  for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91814794.en.html">Diagnostic Procedure Instructions</a>  provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2172782">
+<A HREF="#ss2-2172782">
+<H3>Circuit/System Description</H3></A><p>The control module enables the appropriate fuel injector pulse for each cylinder. The ignition voltage is supplied directly to the fuel injectors. The control module controls each fuel injector by grounding the control circuit via a solid state device
+called a driver. A fuel injector coil winding resistance that is too high or too low will affect the engine driveability. A fuel injector control circuit DTC may not set, but a misfire may be apparent. The fuel injector coil windings are affected by temperature.
+The resistance of the fuel injector coil windings will increase as the temperature of the fuel injector increases. </p>
+<p>When performing the fuel injector balance test, the scan tool is first used to energize the fuel pump relay. The fuel injector tester or the scan tool is then used to pulse each injector for a precise amount of time, allowing a measured amount of the fuel
+to be injected. This causes a drop in the system fuel pressure that can be recorded and used to compare each injector. </p>
+
+<A NAME="ss3-2172782">
+<A HREF="#ss3-2172782">
+<H3>Diagnostic Aids</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Monitoring the misfire current counters, or misfire graph, may help to isolate the fuel injector that is causing the condition.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Operating the vehicle over a wide temperature range may help isolate the fuel injector that is causing the condition. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the fuel injector coil test within the conditions of the customers concern. A fuel injector condition may only be apparent at a certain temperature, or under certain conditions.</td></tr></table></div>
+
+
+<A NAME="ss4-2172782">
+<A HREF="#ss4-2172782">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92204644.en.html">Engine Controls Schematics</a></p>
+<h4>Connector End View Reference</h4><p>
+<a href="CELLREF_164814">Component Connector End Views</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91506352.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91465833.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>Scan Tool Reference</h4><p>
+<a href="92202618.en.html">Control Module References</a></p>
+<h4>Special Tools</h4><p><em>CH-48027 </em>Digital Pressure Gage
+ </p>
+<p>For equivalent regional tools, refer to 
+
+<a href="92173600.en.html">Special Tools</a> .</p>
+
+<A NAME="ss5-2172782">
+<A HREF="#ss5-2172782">
+<H3>Component Testing</H3></A><h4>Fuel Injector Coil Static Test</h4><p>Verify the resistance of each fuel injector with one of the following methods:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">If the B34A&nbsp;Engine Coolant Temperature Sensor 1 is between 10-32&deg;C (50-90&deg;F), the resistance of each fuel injector should be 11-14&nbsp;&#8486;.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8658;</td><td valign="top">If the injectors measure OK, perform the fuel injector balance test-fuel pressure test.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8658;</td><td valign="top">If not within the specified range, replace the fuel injector.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">If the B34A&nbsp;Engine Coolant Temperature Sensor 1 is not between 10-32&deg;C (50-90&deg;F), measure and record the resistance of each fuel injector with a DMM. Subtract the lowest resistance value from the highest resistance value.
+The result obtained should be equal to or less than 3&nbsp;&#8486;.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8658;</td><td valign="top"> the difference is equal to or less than 3&nbsp;&#8486;, refer to 
+
+<a href="92172782.en.html">Fuel Injector Diagnosis</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8658;</td><td valign="top">If the difference is more than 3&nbsp;&#8486;, add up all of the fuel injector resistance values to obtain a total resistance value. Divide the total resistance value by the number of fuel injectors to obtain an average resistance value. Subtract
+the lowest individual fuel injector resistance value from the average resistance value. Compute the difference between the highest individual fuel injector resistance value and the average resistance value. Replace the fuel injector that displays the greatest
+difference above or below the average.</td></tr></table></div>
+
+
+<OL>
+</ol><h4>Fuel Injector Balance Test - Fuel Pressure Static Test</h4><ol>
+
+<p><font color=brown><b>Note:&nbsp;</b>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Do not perform this test if the engine coolant temperature (ECT) is above 94&deg;C (201&deg;F). Irregular fuel pressure readings may result due to hot soak fuel boiling.</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Verify that an adequate amount of fuel is in the fuel tank before proceeding with this diagnostic.</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Before proceeding with this test review the 
+<em>CH 48027 </em>User Manual
+ for Safety Information and Instructions. </font></td></tr></table></div>
+
+</font></p><LI TYPE="1">Install a fuel pressure gauge. Refer to 
+
+<a href="92173474.en.html">Fuel Pressure Gage Installation and Removal</a> .</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF. </LI>
+
+<p><font color=brown><b>Note:&nbsp;</b>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>The fuel pump relay may need to be commanded ON a few times in order to obtain the highest possible fuel pressure. </font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Do not start the engine. </font></td></tr></table></div>
+
+</font></p><LI TYPE="1">Command the fuel pump relay ON with a scan tool. </LI>
+<LI TYPE="1">Observe the fuel pressure gauge with the fuel pump commanded ON. The fuel pressure should be 345-414&nbsp;kPa (50-60&nbsp;PSI). </LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the fuel pressure is not 345-414&nbsp;kPa (50-60&nbsp;PSI), refer to 
+
+<a href="92222644.en.html">Fuel System Diagnosis</a> .</td></tr></table></div>
+<LI TYPE="1">Monitor the fuel pressure gauge for 1&nbsp;min. The fuel pressure should not decrease more than 34&nbsp;kPa (5&nbsp;PSI). </LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the fuel pressure decreases more than 34&nbsp;kPa (5&nbsp;PSI), refer to 
+
+<a href="92222644.en.html">Fuel System Diagnosis</a> .</td></tr></table></div>
+<LI TYPE="1">Perform the Fuel Injector Balance Test with scan tool. </LI>
+</OL>
+
+<OL>
+</ol><h4>Fuel Injector Balance Test with Scan Tool Static Test</h4><ol>
+<LI TYPE="1">Command the fuel pump relay ON and then OFF three times with a scan tool. On the last command, as the fuel pressure begins to slowly degrade and stabilize, select a fuel pressure within 34&nbsp;kPa (5&nbsp;PSI) of the maximum pump pressure. Record
+this fuel pressure. This is the starting pressure at which you will pulse each injector. </LI>
+<LI TYPE="1">With a scan tool, select the fuel injector balance test function within the special functions menu. </LI>
+<LI TYPE="1">Select an injector to be tested. </LI>
+<LI TYPE="1">Press Enter to prime the fuel system. </LI>
+<LI TYPE="1">Energize the fuel injector by depressing the pulse injector button on the scan tool at the previously selected pressure. </LI>
+<LI TYPE="1">After the injector stops pulsing, select min from the display mode on the 
+<em>CH-48027 </em>Digital Pressure Gage
+ and record the Min pressure.</LI>
+
+<p><font color=brown><b>Note:&nbsp;</b>New test results will not be recorded if the Min/Max results are not cleared after each injector is tested.
+</font></p><LI TYPE="1">Clear the Min/Max results on the 
+<em>CH-48027 </em>Digital Pressure Gage
+.</LI>
+<LI TYPE="1">Select normal from the display mode on the 
+<em>CH-48027 </em>Digital Pressure Gage
+.</LI>
+<LI TYPE="1">Press enter on the scan tool to bring you back to the select injector screen. </LI>
+<LI TYPE="1">Repeat steps 3 through 9 for each fuel injector. </LI>
+<LI TYPE="1">Perform the pressure drop calculation. </LI>
+</OL>
+
+<OL>
+</ol><h4>Pressure Drop Calculation Static Test</h4><ol>
+<LI TYPE="1">Subtract the minimum pressure from the starting pressure for one fuel injector. The result is the pressure drop value. </LI>
+<LI TYPE="1">Obtain a pressure drop value for each fuel injector. </LI>
+<LI TYPE="1">Add all of the individual pressure drop values except for the injector suspected of being faulty. This is the total pressure drop. </LI>
+<LI TYPE="1">Divide the total pressure drop by the number of fuel injectors that were added up. This is the average pressure drop. The difference between any individual pressure drop and the average pressure drop should not be more than 20&nbsp;kPa (3&nbsp;PSI). </LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the difference between any individual pressure drop and the average pressure drop is more than 20&nbsp;kPa (3&nbsp;PSI), replace the fuel injector.</td></tr></table></div>
+</OL>
+
+<A NAME="ss6-2172782">
+<A HREF="#ss6-2172782">
+<H3>Repair Instructions</H3></A><p>Perform the 
+
+<a href="91556771.en.html">Diagnostic Repair Verification</a> .</p>
+<p>
+<a href="92173477.en.html">Fuel Injector Replacement</a> </p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

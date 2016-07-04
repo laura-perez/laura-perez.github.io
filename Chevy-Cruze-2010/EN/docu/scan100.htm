@@ -1,0 +1,1622 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=utf-8">
+  <meta name="Generator" content="Microsoft Word 10 (filtered)">
+  <title>iSPS User’s Manual</title>
+  <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Batang;
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Dotum;
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@Dotum";
+	panose-1:2 11 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@Batang";
+	panose-1:2 3 6 0 0 1 1 1 1 1;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:10.0pt;
+	font-family:Batang;}
+h1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	page-break-after:avoid;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+h2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	page-break-after:avoid;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:10.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+h3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:15.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-100.0pt;
+	page-break-after:avoid;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:10.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+h4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:35.9pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	page-break-after:avoid;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+h5
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:36.0pt;
+	page-break-after:avoid;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+h6
+	{margin-top:0cm;
+	margin-right:10.0pt;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-indent:0cm;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-indent:-.1pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:10.0pt;
+	font-family:Batang;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:10.0pt;
+	font-family:Batang;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:10.0pt;
+	font-family:Batang;
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:20.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Batang;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Batang;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0cm;
+	margin-right:10.0pt;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.a, li.a, div.a
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-autospace:none;
+	word-break:break-all;
+	font-size:9.0pt;
+	font-family:Arial;}
+ /* Page Definitions */
+ @page Section1
+	{size:595.3pt 841.9pt;
+	margin:107.85pt 3.0cm 62.9pt 3.0cm;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+  </style>
+</head>
+<body lang="DE">
+<div class="Section1" style="">
+
+  <h1 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><b><span lang="EN-US">
+1.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span dir="ltr"><b><span lang="EN-US">Outline</span></b></span></h1>
+ <p class="MsoNormal" style=""><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+
+
+The diagnostic software that is being used in the repair network for SCAN-100 must be regularly updated with its related new software in order to diagnose new car models or new systems.<!--j-->&nbsp;<!--j-->
+
+
+
+Therefore "GMDAT Loader" has been developed to supply SCAN-100 programs smoothly to the repair network and this is provided within a CD-ROM or DVD to the scan tool user.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h1 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><b><span lang="EN-US">
+2.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span dir="ltr"><b><span lang="EN-US">
+GMDAT Loader Components</span></b></span></h1>
+ <p class="MsoNormal" style=""><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+(1)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+"GMDAT Loader" is produced as a complete package programme that contains several other applications for SCAN-100 communication.<!--j-->&nbsp;<!--j-->
+
+All the software included is as follows:</span></span></p>
+ <p class="MsoNormal" style="">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+(2)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+
+
+iSPS (Interface Service Programming System): in order to reprogramme software of an electronic control unit (ECU), select the software for the related car by model or option which is stored at the iSPS database, then download onto the R-Card of SCAN-100.<!--j-->&nbsp;<!--j-->
+
+This is the method for use on the C100 (WINSTORM, CAPTIVA) vehicle.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+(3)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+SL - SCANLOAD - this program enables the downloading of diagnostic programmes onto the D-card of SCAN-100.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+(4)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+
+
+KWPSend - in order to reprogramme software of an electronic control unit (ECU), this software is required to download programmes onto the R-card which is provided in accordance with car type or option separately to the service network.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+(5)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+DAP (Snapshot) - enables Snapshot Data to be downloaded to the PC.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+(6)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+SA - (Security Access) - During certain Scan 100 operations on the vehicle, security access maybe requested. This programme supplies the security access to the Scan 100.</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h1 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><b><span lang="EN-US">
+3.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span dir="ltr"><b><span lang="EN-US">
+
+Installation of GMDAT Loader &amp; PC Specifications recommended</span></b></span></h1>
+ <p class="MsoNormal" style=""><span lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(1)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Basic Specifications</span></span></h2>
+
+
+   <p class="MsoNormal" style="margin-left: 36pt; text-align: left; text-indent: -0.1pt;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">CPU - Pentium 3, 500 MHz</span></p>
+ <h6 style="margin-right: 0cm;"><span lang="EN-US">
+RAM - 256 MB</span></h6>
+
+  <p class="MsoNormal" style="margin-left: 36pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">HDD - 20 GB</span></p>
+
+  <p class="MsoNormal" style="margin-left: 36pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">VGA - VGA card with more than 16 MB VRAM</span></p>
+
+  <p class="MsoNormal" style="margin-left: 36pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Others - RS-232C (serial) port, PS/2, or USB mouse</span></p>
+
+  <p class="MsoNormal" style="margin-left: 36pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">OS - MS Windows 2000, MS Windows XP, MS Windows 2003</span></p>
+
+  <p class="MsoNormal" style="margin-left: 36pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(2)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Recommended Specifications</span></span></h2>
+
+
+   <p class="MsoNormal" style="margin-left: 36pt; text-align: left; text-indent: -0.1pt;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">CPU - Pentium 4, 1.4 GHz</span></p>
+
+  <h5 style="margin-left: 36pt; text-align: left; text-indent: -0.1pt;" align="left"><span lang="EN-US">RAM - 512 MB</span></h5>
+ <p class="MsoHeading9"><span lang="EN-US">HDD - 40 GB</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 36pt; text-align: left; text-indent: -0.1pt;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">VGA - VGA card with more than 32 MB VRAM</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 36pt; text-align: left; text-indent: -0.1pt;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Others - RS-232C (serial) port, PS/2 or USB mouse</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 36pt; text-align: left; text-indent: -0.1pt;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+OS - MS Windows 2000 SP4, MS Windows XP SP2, MS Windows 2003</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h1 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><b><span lang="EN-US">
+4.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span dir="ltr"><b><span lang="EN-US">
+
+Installation of "GMDAT Loader"</span></b></span></h1>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+The following screen shots show the process of installing the "GMDAT Loader" program (Scan100_Ver_00_00.exe)</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image001.jpg" height="265" width="390"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure</span>
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><!--j-->&nbsp;<!--j-->1<!--j-->&nbsp;<!--j--></span>
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Initial Installation Screen (Click [Next])</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image002.jpg" height="264" width="390"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure</span>
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><!--j-->&nbsp;<!--j-->2<!--j-->&nbsp;<!--j--></span>
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Installation Folder Selection (Click [Install] after selecting)</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image003.jpg" height="265" width="390"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->3<!--j-->&nbsp;<!--j-->
+Installation Progress Screen</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+As below, if installation is completed, the shortcut icon, "GMDAT Loader" appears on the desktop.<!--j-->&nbsp;<!--j-->
+
+
+You can also find the same shortcut icon in Start &gt;&gt; Program &gt;&gt; GMDSCAN</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image004.jpg" height="265" width="390"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->4<!--j-->&nbsp;<!--j-->
+Completion Screen of Installation</span></p>
+ <p class="MsoBlockText" style="margin: 0cm 0cm 0.0001pt;">
+ <span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <h1 style="margin-left: 14.2pt; text-indent: 0cm;"><b><span lang="EN-US">
+5.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span dir="ltr"><b><span lang="EN-US">GMDAT Loader</span></b></span></h1>
+ <p class="MsoNormal" style="margin-left: 14.2pt;"><span lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 29.95pt; text-indent: -15.75pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">(1)</span>
+ <span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Outline</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+This is the executable file that launches on one screen all the other programmes that this software package contains.</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 29.95pt; text-indent: -15.75pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">(2)</span>
+ <span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Execution</span></span></p>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+
+Execute the shortcut icon "GMDAT Loader" located on the Desktop or by clicking Start &gt; Program &gt; GMDSCAN.</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 18pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image005.jpg" height="265" width="362"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->5<!--j-->&nbsp;<!--j-->
+Locations of the GMDAT Loader Shortcut Icon (Red Circle)</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <h2 style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt;" lang="EN-US">(3) Execution Screen</span></h2>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+When "GMDAT Loader" is activated, the user can see 5 main menu icons.<!--j-->&nbsp;<!--j-->
+
+SCAN-100 applications are as follows and can be executed by clicking on each icon.<!--j-->&nbsp;<!--j-->
+
+
+
+
+These applications are iSPS (Interface Service Programming System), SL (Scan Load), KWP (KWPSend), DAP (Snap Shot), SA (Security Access) etc. And when "Exit" is clicked, "GMDAT Loader" will be terminated.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image006.jpg" height="265" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->6<!--j-->&nbsp;<!--j-->
+Loader Main Screen</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h1 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span lang="EN-US">
+6.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr"><span lang="EN-US">iSPS</span></span></h1>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <h2 style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt;" lang="EN-US">
+(1)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Outline</span></span></h2>
+ <p class="MsoBodyTextIndent3" style="text-align: justify;">
+ <span lang="EN-US">
+
+
+
+
+
+
+
+Same as the C100 model, by direct making of the programming data (software, calibration and component option etc.) on each ECU’s database at production line, the ECU which is supplied to repair network for service also enables each Electronic Control Unit function when its related programming data should be input by reprogramming.<!--j-->&nbsp;<!--j-->
+
+
+
+
+
+
+For this, Car product information, programming data according to car model/ system are saved in related "iSPS" folder, so it automatically perceives VIN (Vehicle Identification Number) then selects the latest data and downloads it onto the R-card of the Scan-100.</span></p>
+ <p class="MsoBodyTextIndent3" style="text-align: justify;">
+ <span lang="EN-US">&nbsp;</span></p>
+ <h2 style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt;" lang="EN-US">(2) Execution</span></h2>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Click the iSPS button on the "GMDAT Loader", or execute the shortcut icon iSPS on Start&gt;&gt; Program&gt;&gt;GMDSCAN&gt;&gt;iSPS.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image007.jpg" height="160" width="416"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->7<!--j-->&nbsp;<!--j-->
+Running the iSPS on the Windows Desktop</span></p>
+ <p class="MsoFooter" style=""><span lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image008.jpg" height="265" width="342"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->8<!--j-->&nbsp;<!--j-->
+Running the iSPS on the Loader’s Main Screen</span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">(Click the [iSPS] button in the red-colored box)</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(3)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">iSPS Main Screen</span></span></h2>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+
+
+
+The iSPS main screen displays information about the vehicle’s VIN and ECU software serial number by diagnosing with SCAN-100 and provides a search for the reprogramme data as well.</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image009.jpg" height="456" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->9<!--j-->&nbsp;<!--j-->
+Main Screen</span></p>
+ <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+The main menu consists of the following sections: Vehicle Information, Read VIN, Download, and System.<!--j-->&nbsp;<!--j-->
+The information on each part’s functions is given as follows:</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h3 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+A.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Vehicle Information</span></span></h3>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">ECU Type:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+ECU type Selection or Display, the user can read from the SCAN-100 iSPS mode or can directly select the type.</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">VIN:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+VIN Input or Display, the user can read from the SCAN-100 iSPS mode or can directly input VIN.</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Car Model:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Select car type or user can select directly.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h3 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+B.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Read VIN</span></span></h3>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Connect:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">To connect to the SCAN-100</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+Load Vehicle Information:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+Read ECU types, VIN, and ECU part numbers stored in the SCAN-100 -&gt; if reading is successful, the contents in the vehicle information is automatically updated.<br>
+ <br>
+ </span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+<i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Note: You should click Connect first, and then click Load Vehicle Information.<!--j-->&nbsp;<!--j-->
+
+However, you can also go directly to the automatic connection to SCAN-100 by clicking Load Vehicle Information.</span></i></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h3 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+C.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Programming Data Download</span></span></h3>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Normal mode:</span></span></p>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+
+
+This download mode is only used when the ECU types and VIN information on SCAN-100 are valid, or when the VIN information the user inputs are valid.<!--j-->&nbsp;<!--j-->
+
+In this mode, iSPS automatically selects the data map and generates the file to download (recommended mode).</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Manual mode:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+This download mode is used only when the ECU types and VIN information on SCAN-100 is not valid, or when the auto mode cannot be used.<!--j-->&nbsp;<!--j-->
+
+In this mode, the user selects the data map and generates the file to download.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h3 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+D.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">System</span></span></h3>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Configuration:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">To go to the iSPS configuration screen</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Exit:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">iSPS termination</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(4)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">iSPS System Configuration</span></span></h2>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+This screen is to configure the communication between iSPS and SCAN-100, and to configure the iSPS folder.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image010.jpg" height="374" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->10<!--j-->&nbsp;<!--j-->
+Configuration Screen</span></p>
+ <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+
+
+
+The iSPS package is distributed with the reconfigured optimal values compatible with most PCs, so it is not recommended to change the settings except for any special case like an emergency, equipment replacement, or communication port replacement.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h3 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+A.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Communication Settings</span></span></h3>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Port:</span></span></p>
+ <p class="MsoHeading7"><span lang="EN-US">Set the communication port.<!--j-->&nbsp;<!--j-->
+Supports ports from COM1 to COM4</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Baud:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+To set the communication speed (SCAN-100 supports only 38400 as of April 2006.)</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Data bit:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+To set the data bit (Currently SCAN-100 supports only 8 bit as of April 2006).</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Stop bit:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+To set the stop bit (Currently SCAN-100 support only 1 bit as of April 2006).</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Parity:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+To set the parity bit (Currently SCAN-100 does not support parity bit as of April 2006).</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h3 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+B.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Working Directory</span></span></h3>
+ <h3 style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt;" lang="EN-US">
+
+The view of the iSPS folder screen can be set by the user.<!--j-->&nbsp;<!--j-->
+
+It is recommended to keep the default folder to ensure optimal use.</span></h3>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Browse:</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">To display the folder selection screen.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image011.jpg" height="379" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->11<!--j-->&nbsp;<!--j-->
+
+Folder Select Screen (Click OK after selecting iSPS folder)</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(5)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Connection</span></span></h2>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+The Interface of the connection process is needed in order to use normal mode or manual mode while downloading</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+A.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+To connect to the communication port between SCAN-100 and PC</span></span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+B.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+Click Connect</span></span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+C.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+Click Load Vehicle Information</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoBodyTextIndent3"><span lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(6)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Normal Mode</span></span></h2>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+
+
+Normal Mode enables the iSPS to automatically generate the file to download by using ECU and VIN information from the SCAN-100 by clicking Load Vehicle Information, and enables the user to download the generated file.</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 11pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Note: Users are recommended to use the normal mode.<!--j-->&nbsp;<!--j-->
+Use manual mode only in</span></i><i><span style="font-size: 12pt;" lang="EN-US"> </span>
+</i><i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+special cases (e.g., when normal mode cannot be used or others).</span></i></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;"><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<b> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+[How to Use the Normal Mode]</span></b></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+A.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Perform the connection process outlined in the preceding section on "Connection" (5).</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+B.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Select Normal Mode on the main screen</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+C.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+The following screen appears when VIN, which was from SCAN-100, or the user’s input is valid.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Note: In case VIN is not valid, an error message appears instructing the user to re-input VIN.<!--j-->&nbsp;<!--j-->
+
+In this case, normal mode cannot be used.</span></i></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></i></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image012.jpg" height="278" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->12<!--j-->&nbsp;<!--j-->
+Normal Mode Screen<br>
+ <br>
+ </span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+D.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Select the car name in Car Model</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+E.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Click Download or Make KWP</span></span></p>
+ <p class="MsoNormal" style="margin-left: 15.3pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 15.3pt;">
+<i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Note: Clicking Download allows the user to download map data in the R-CARD of SCAN-100.<!--j-->&nbsp;<!--j-->
+
+
+
+On the other hand, Make KWP is clicked only when the user wants to download the file through KWPSend.</span></i></p>
+ <p class="MsoNormal" style="margin-left: 15.3pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+F.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+The download progress bar appears or the message "KWP file generation" is displayed.</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(7)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Manual Mode</span></span></h2>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+
+
+The manual mode should be used only when VIN uploaded from SCAN-100 does not coincide with the production build data of the iSPS, or when the user should select the map file for his own requirements.</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Note: Users are not recommended to use manual mode.<!--j-->&nbsp;<!--j-->
+
+This should only be accessed in situations when normal mode is not possible.<!--j-->&nbsp;<!--j-->
+
+The manufacturer shall not be responsible for any defects or problems arising from inadvertent use of the manual mode.</span></i></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+The manual mode consists of sections namely, vehicle information, utility view, software view, calibration view, and map data view, which are described as follows:</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoHeading8" style="text-indent: 0cm;"><span lang="EN-US">
+A.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr"><span lang="EN-US">Vehicle Information</span></span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">ECU Type:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+ECU type Selection or Display (the user can read from the SCAN-100 iSPS mode or can select the type directly)</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">VIN:</span></span></p>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+VIN Input or Display (the user can read from SCAN-100 iSPS mode or can input VIN directly)</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt;" lang="EN-US">
+- <span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Car Model:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Select car type (can select directly)</span></p>
+ <p class="MsoHeading7"><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoHeading8" style="text-indent: 0cm;"><span lang="EN-US">
+B.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr"><span lang="EN-US">Utility view:</span></span></p>
+ <p class="MsoHeading7"><span lang="EN-US">Select a file in the view</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoHeading8" style="text-indent: 0cm;"><span lang="EN-US">
+C.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr"><span lang="EN-US">Software view:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+Select a file in the view</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+D.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+Calibration view:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Select a file according to the vehicle configuration options</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+E.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+Map data view:</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Shows finally combined data to be downloaded.</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image013.jpg" height="250" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->13<!--j-->&nbsp;<!--j-->
+Manual Mode Screens #1</span></p>
+ <h3 style="text-align: left; text-indent: -15pt;" align="left">
+ <span style="font-size: 12pt;" lang="EN-US">&nbsp;</span></h3>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<b> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+[How to Use the Manual Mode]</span></b></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<b> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></b></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+A.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Perform the connection process outlined in the section "Connection" (5).</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+B.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Click the Manual Mode on the main screen</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+C.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+The following screen appears if the previous steps are correctly performed.</span></span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image014.jpg" height="250" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->14<!--j-->&nbsp;<!--j-->
+Manual Mode Screens #2</span></p>
+ <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+D.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+
+
+Input VIN in the VIN section of the vehicle information part (this can be skipped if VIN appears by clicking Load Vehicle Information on the main screen, or when valid VIN is inputted on the main screen).</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+E.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+
+
+Select ECU type in the vehicle information part (this can be skipped if the ECU type appears by clicking Load Vehicle Information on the main screen, or when ECU is selected on the main screen).</span></span></p>
+ <p class="MsoNormal" style="">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+F.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+
+Click ADD after selecting file in utility view (clicking ADD displays the selected file in the map data view.)</span></span></p>
+ <p class="MsoNormal" style="">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+G.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;</span></span>
+ <span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+Click ADD after selecting file in software view (clicking ADD displays the selected file in the map data view).</span></span></p>
+ <p class="MsoNormal" style="">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+H.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">&nbsp;</span></span>
+ <span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+
+Click ADD after selecting file in cal view (clicking ADD displays the selected file in the map data view).</span></span></p>
+ <p class="MsoNormal" style="">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Note: The procedures (from F through H) are interchangeable.</span></i></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">I.<!--j-->&nbsp;<!--j-->
+
+Click Download or Make KWP</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+<i> <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Note: Clicking Download allows the user to download map data in R-CARD of SCAN-100.<!--j-->&nbsp;<!--j-->
+
+
+
+On the other hand, Make KWP is clicked only when the user wants to download the file through KWPSend.</span></i></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoBodyTextIndent3" style="text-align: justify;">
+ <span lang="EN-US">J.<!--j-->&nbsp;<!--j-->
+
+The download progress bar appears or the message "KWP file generation" is displayed.</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h1 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><b><span lang="EN-US">
+7.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span dir="ltr"><b><span lang="EN-US">ScanLoad</span></b></span></h1>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+This program updates the S/W of SCAN-100.<!--j-->&nbsp;<!--j-->
+Refer to the manual previously provided.</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h1 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><b><span lang="EN-US">
+8.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span dir="ltr"><b><span lang="EN-US">KWPSend</span></b></span></h1>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+This program allows the user to download the ECU program in P-CARD of SCAN-100.<!--j-->&nbsp;<!--j-->
+
+Refer to the manual previously provided.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h1 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><b><span lang="EN-US">
+9.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></b><span dir="ltr"><b><span lang="EN-US">DAP</span></b></span></h1>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+This program enables the user to view snapshot data of SCAN-100.<!--j-->&nbsp;<!--j-->
+Refer to the manual previously provided.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <h1 style="margin-left: 14.2pt; text-align: left;" align="left">
+<b> <span lang="EN-US">10.<!--j-->&nbsp;<!--j-->Security Access</span></b></h1>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(1)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Outline</span></span></h2>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+This is the Security Mode Unlocking Program to access the ECU.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(2)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Execution</span></span></h2>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">
+
+
+
+Click SA on the "GMDAT Loader", or execute the shortcut icon Security Access on Start&gt;&gt; Program &gt;&gt; GMDSCAN &gt;&gt; iSPS</span></p>
+ <p class="MsoBodyTextIndent2"><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoBodyTextIndent2" style="text-align: center;" align="center">
+ <span lang="EN-US"><img src="../../Graphic-Pool/scan100/image015.jpg" height="118" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->15<!--j-->&nbsp;<!--j-->
+Running Windows Desktop</span></p>
+ <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="text-align: center; page-break-after: avoid;" align="center">
+ <span lang="EN-US"><img src="../../Graphic-Pool/scan100/image016.jpg" height="264" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->16<!--j-->&nbsp;<!--j-->
+Running Windows with GMDAT Loader (SA click)</span></p>
+ <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(3)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">Screen</span></span></h2>
+ <p class="MsoBodyTextIndent3"><span lang="EN-US">
+
+The screen consists of two buttons, [Security Access] and [Exit], along with usage directions.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image017.jpg" height="183" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->17<!--j-->&nbsp;<!--j-->
+Security Access Screen</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <h2 style="margin-left: 14.2pt; text-align: left; text-indent: 0cm;" align="left"><span style="font-size: 12pt;" lang="EN-US">
+(4)<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr">
+ <span style="font-size: 12pt;" lang="EN-US">How to Use</span></span></h2>
+ <p class="MsoNormal"><span lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+A.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Read the seed value of the ECU in the SCAN-100.<!--j-->&nbsp;<!--j-->
+
+This enables the user to read automatically while diagnosing function then it shows its related message.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+B.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+Execute Security Access by connecting SCAN-100 to the PC’s comm. port.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+C.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+Click Security Access.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt; text-indent: 0cm;">
+ <span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;" lang="EN-US">
+D.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;">
+ </span></span><span dir="ltr">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+When ECU security key is transmitted to SCAN-100, the following dialog box appears.</span></span></p>
+ <p class="MsoNormal" style="margin-left: 14.2pt;">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+
+   <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center; page-break-after: avoid;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US"><img src="../../Graphic-Pool/scan100/image018.jpg" height="148" width="340"></span></p>
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->18<!--j-->&nbsp;<!--j-->
+Successful Security Key Transmission Message</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <h1 style="margin-left: 14.2pt; text-align: left;" align="left">
+<b> <span lang="EN-US">&nbsp;</span></b></h1>
+ <h1 style="margin-left: 14.2pt; text-align: left;" align="left">
+<b> <span lang="EN-US">&nbsp;</span></b></h1>
+ <h1 style="margin-left: 14.2pt; text-align: left;" align="left">
+<b> <span lang="EN-US">11.<!--j-->&nbsp;<!--j-->Package Configuration</span></b></h1>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">
+
+After "GMDT Loader" installation, the package folder configuration is as follows.</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <table align="left" cellpadding="0" cellspacing="0">
+ <tbody>
+ <tr>
+ <td height="4" width="11"><br>
+ </td>
+ </tr>
+ <tr>
+ <td><br>
+ </td>
+ <td><img src="../../Graphic-Pool/scan100/image019.gif" height="438" width="558"></td>
+ </tr>
+ </tbody>
+ </table>
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: left;" align="left">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+
+  <p class="MsoNormal" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">&nbsp;</span></p>
+ <br clear="all">
+
+  <p class="MsoCaption" style="margin-left: 14.2pt; text-align: center;" align="center">
+ <span style="font-size: 12pt; font-family: Arial;" lang="EN-US">Figure<!--j-->&nbsp;<!--j-->19<!--j-->&nbsp;<!--j-->
+Package Folder Configurations</span></p><br>
+<p align="right">30 April 2006</p>
+ </div>
+ </body>
+ </html>

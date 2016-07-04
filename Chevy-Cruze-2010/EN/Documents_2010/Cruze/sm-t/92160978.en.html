@@ -1,0 +1,408 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92160978.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC B0223, B0233, B023A, or B0408</H2>
+
+
+<A NAME="ss1-2160978">
+<A HREF="#ss1-2160978">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the 
+
+<a href="92092144.en.html">Diagnostic System Check - Vehicle</a>  prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review 
+
+<a href="91957622.en.html">Strategy Based Diagnosis</a>  for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91814794.en.html">Diagnostic Procedure Instructions</a>  provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2160978">
+<A HREF="#ss2-2160978">
+<H3>DTC Descriptors</H3></A><B>DTC&nbsp;B0223&nbsp;01:&nbsp;</B>Recirculate Position Command 1 Circuit Short to Battery
+<br><br><B>DTC&nbsp;B0223&nbsp;06:&nbsp;</B>Recirculate Position Command 1 Circuit Short to Ground or Open
+<br><br><B>DTC&nbsp;B0233&nbsp;01:&nbsp;</B>Air Flow Control Circuit Short to Battery 
+<br><br><B>DTC&nbsp;B0233&nbsp;06:&nbsp;</B>Air Flow Control Circuit Short to Ground or Open
+<br><br><B>DTC&nbsp;B023A&nbsp;02:&nbsp;</B>HVAC Actuators Supply Voltage Short to Ground
+<br><br><B>DTC&nbsp;B0408&nbsp;01:&nbsp;</B>Main Temperature Control Circuit Short to Battery 
+<br><br><B>DTC&nbsp;B0408&nbsp;06:&nbsp;</B>Main Temperature Control Circuit Short to Ground or Open
+<br><br>
+<A NAME="ss3-2160978">
+<A HREF="#ss3-2160978">
+<H3>Diagnostic Fault Information</H3></A><TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Circuit</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Short to Ground</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Open/High Resistance</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Short to Voltage</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" ROWSPAN=1><P>Signal Performance</P>
+</TH></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Stepper Motors 12&nbsp;V Reference</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B023A&nbsp;02,</P>
+<P>B0223&nbsp;06,</P>
+<P>B0233&nbsp;06,</P>
+<P>B0408&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06,</P>
+<P>B0233&nbsp;06,</P>
+<P>B0408&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Recirculation Actuator Control&nbsp;1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Recirculation Actuator Control&nbsp;2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Recirculation Actuator Control&nbsp;3</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Recirculation Actuator Control&nbsp;4</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0223&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Air Temperature Actuator - Left Control&nbsp;1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>2</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Air Temperature Actuator - Left Control&nbsp;2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>2</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Air Temperature Actuator - Left Control&nbsp;3</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>2</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Air Temperature Actuator - Left Control&nbsp;4</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0408&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>2</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Mode Actuator Control&nbsp;1</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>3</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Mode Actuator Control&nbsp;2</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>3</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Mode Actuator Control&nbsp;3</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>3</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1><P>Mode Actuator Control&nbsp;4</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;06</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;06</P>
+</TD><TD VALIGN="middle" ROWSPAN=1><P>B0233&nbsp;01</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>3</P>
+</TD></TR>
+<TR>
+<TD VALIGN="middle" ROWSPAN=1 COLSPAN=5><P>1. Air Recirculation Malfunction</P>
+<P>2. Air Temperature Malfunction</P>
+<P>3. Air Distribution Malfunction</P>
+</TD></TR>
+</TABLE>
+<A NAME="ss4-2160978">
+<A HREF="#ss4-2160978">
+<H3>Circuit/System Description</H3></A><p>Stepper motors are used for temperature regulation, air distribution control and recirculation flap control.</p>
+<p>With the appropriate switches at the HVAC control, the desired air temperature flap position, air distribution flap position and recirculation flap position can be put in. The selected values are passed to the HVAC control module via the LIN-Bus. The HVAC
+control module supplies a 12&nbsp;V reference voltage to the stepper motors and energizes the 4 stepper motor coils with a pulsed ground signal. The stepper motors put the appropriate flap into the calculated position, in order to reach the put in temperature/position.</p>
+
+<A NAME="ss5-2160978">
+<A HREF="#ss5-2160978">
+<H3>Conditions for Running the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ignition ON.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The HVAC control module is ON.</td></tr></table></div>
+
+
+<A NAME="ss6-2160978">
+<A HREF="#ss6-2160978">
+<H3>Conditions for Setting the DTC</H3></A><h4>B023A&nbsp;02</h4><p>The stepper motors supply output is shorted to ground.</p>
+<h4>B0223&nbsp;01, B0233&nbsp;01 or B0408&nbsp;01</h4><p>At least one control output (of 4 possible outputs) of the appropriate stepper motor is shorted to voltage when motor starts moving. Faults are not detected when motor is already running or target position is already reached.</p>
+<h4>B0223&nbsp;06, B0233&nbsp;06 or B0408&nbsp;06</h4><p>At least one control output (of 4 possible outputs) of the appropriate stepper motor is shorted to ground or open when motor starts moving. Faults are not detected when motor is already running or target position is already reached.</p>
+
+<A NAME="ss7-2160978">
+<A HREF="#ss7-2160978">
+<H3>Action Taken When the DTC Sets</H3></A>
+
+<h4>B023A&nbsp;02</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The affected output will be switched off for hardware protection.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">All stepper motors are deactivated.</td></tr></table></div>
+
+
+
+<h4>B0223, B0233 or B0408</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The affected output will be switched off for hardware protection.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The affected stepper motor is deactivated.</td></tr></table></div>
+
+
+<A NAME="ss8-2160978">
+<A HREF="#ss8-2160978">
+<H3>Conditions for Clearing the DTC</H3></A><p>The condition for setting the DTC is no longer present. </p>
+
+<A NAME="ss9-2160978">
+<A HREF="#ss9-2160978">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92204679.en.html">HVAC Schematics</a></p>
+<h4>Connector End View Reference</h4><p>
+<a href="CELLREF_164814">Component Connector End Views</a></p>
+<h4>Description and Operation</h4><p>
+<a href="92164340.en.html">Manual HVAC Description and Operation</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91506352.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91465833.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>Scan Tool Reference</h4><p>
+<a href="92202618.en.html">Control Module References</a> for scan tool information</p>
+
+<A NAME="ss10-2160978">
+<A HREF="#ss10-2160978">
+<H3>Circuit/System Verification</H3></A>
+<OL><LI TYPE="1">Verify that DTC B023A&nbsp;02 is not present.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If DTC is present, refer to Actuator Power Supply Malfunction.</td></tr></table></div>
+<LI TYPE="1">Verify that DTC B0223&nbsp;01 or B0223&nbsp;06 is not present.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top"> If DTC is present, refer to Recirculation Actuator Malfunction.</td></tr></table></div>
+<LI TYPE="1">Verify that DTC B0233&nbsp;01 or B0233&nbsp;06 is not present.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top"> If DTC is present, refer to Mode Actuator Malfunction.</td></tr></table></div>
+<LI TYPE="1">Verify that DTC B0408&nbsp;01 or B0408&nbsp;06 is not present.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top"> If DTC is present, refer to Air Temperature Actuator Malfunction.</td></tr></table></div>
+</OL>
+
+<A NAME="ss11-2160978">
+<A HREF="#ss11-2160978">
+<H3>Circuit/System Testing</H3></A>
+<OL>
+</ol><h4>Actuator Power Supply Malfunction</h4><ol>
+<LI TYPE="1">Ignition OFF, disconnect the X3 harness connector at the K33 HVAC Control Module.</LI>
+<LI TYPE="1">Test for infinite resistance between the reference voltage circuit terminal 15 (X3) and ground.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If less than the specified value, test the reference voltage circuit for a short to ground.</td></tr></table></div>
+<LI TYPE="1">If all circuits test normal, test or replace the K33 HVAC Control Module.</LI>
+</OL>
+
+<OL>
+</ol><h4>Recirculation Actuator Malfunction</h4><ol>
+<LI TYPE="1">Ignition OFF, disconnect the X3 harness connector at the K33 HVAC Control Module and at the M46 Recirculation Actuator.</LI>
+<LI TYPE="1">Ignition ON, test for less than 0.3&nbsp;V between the control circuit terminal at the K33 HVAC Control Module harness connector listed below and ground:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 16 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 17 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 18 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 19 (X3)</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified value, test the control circuit for a short to voltage.</td></tr></table></div>
+<LI TYPE="1">Ignition OFF, test for infinite resistance between the control circuit terminal at the K33 HVAC Control Module harness connector listed below and ground:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 16 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 17 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 18 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 19 (X3)</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If less than the specified value, test the control circuit for a short to ground.</td></tr></table></div>
+<LI TYPE="1">Test for less than 5&nbsp;&#8486; between the control circuit terminals listed below:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M46 Recirculation Actuator terminal 1 and terminal 16 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M46 Recirculation Actuator terminal 2 and terminal 15 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M46 Recirculation Actuator terminal 3 and terminal 17 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M46 Recirculation Actuator terminal 4 and terminal 18 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M46 Recirculation Actuator terminal 6 and terminal 19 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified value, test the control circuit for an open/high resistance.</td></tr></table></div>
+<LI TYPE="1">If all circuits test normal, replace the M46 Recirculation Actuator and verify the DTC does not reset.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the DTC resets, replace the K33 HVAC Control Module.</td></tr></table></div>
+</OL>
+
+<OL>
+</ol><h4>Mode Actuator Malfunction</h4><ol>
+<LI TYPE="1">Ignition OFF, disconnect the X3 harness connector at the K33 HVAC Control Module and at the M37 Mode Actuator.</LI>
+<LI TYPE="1">Ignition ON, test for less than 0.3&nbsp;V between the control circuit terminal listed below and ground:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 2 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 3 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 4 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 5 (X3)</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified value, test the control circuit for a short to voltage.</td></tr></table></div>
+<LI TYPE="1">Ignition OFF, test for infinite resistance between the control circuit terminal listed below and ground:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 2 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 3 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 4 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 5 (X3)</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If less than the specified value, test the control circuit for a short to ground.</td></tr></table></div>
+<LI TYPE="1">Test for less than 5&nbsp;&#8486; between the control circuit terminals listed below:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M37 Mode Actuator terminal 1 and terminal 2 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M37 Mode Actuator terminal 2 and terminal 15 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M37 Mode Actuator terminal 3 and terminal 3 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M37 Mode Actuator terminal 4 and terminal 4 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M37 Mode Actuator terminal 6 and terminal 5 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified value, test the control circuit for an open/high resistance.</td></tr></table></div>
+<LI TYPE="1">If all circuits test normal, replace the M37 Mode Actuator and verify the DTC does not reset.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the DTC resets, replace the K33 HVAC Control Module.</td></tr></table></div>
+</OL>
+
+<OL>
+</ol><h4>Air Temperature Actuator Malfunction</h4><ol>
+<LI TYPE="1">Ignition OFF, disconnect the X3 harness connector at the K33 HVAC Control Module and at the M6L Air Temperature Actuator - Left.</LI>
+<LI TYPE="1">Ignition ON, test for less than 0.3&nbsp;V between the control circuit terminal listed below and ground:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 11 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 12 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 13 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 14 (X3)</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified value, test the control circuit for a short to voltage.</td></tr></table></div>
+<LI TYPE="1">Ignition OFF, test for infinite resistance between the control circuit terminal listed below and ground:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 11 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 12 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 13 (X3)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Terminal 14 (X3)</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If less than the specified value, test the control circuit for a short to ground.</td></tr></table></div>
+<LI TYPE="1">Test for less than 5&nbsp;&#8486; between the control circuit terminals listed below:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M6L Air Temperature Actuator - Left terminal 1 and terminal 11 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M6L Air Temperature Actuator - Left terminal 2 and terminal 15 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M6L Air Temperature Actuator - Left terminal 3 and terminal 12 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M6L Air Temperature Actuator - Left terminal 4 and terminal 13 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">M6L Air Temperature Actuator - Left terminal 6 and terminal 14 (X3) at the K33 HVAC Control Module harness connector</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified value, test the control circuit for an open/high resistance.</td></tr></table></div>
+<LI TYPE="1">If all circuits test normal, replace the M6L Air Temperature Actuator - Left and verify the DTC does not reset.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If the DTC resets, replace the K33 HVAC Control Module.</td></tr></table></div>
+</OL>
+
+<A NAME="ss12-2160978">
+<A HREF="#ss12-2160978">
+<H3>Repair Instructions</H3></A><p>Perform the 
+
+<a href="91556771.en.html">Diagnostic Repair Verification</a>  after completing the diagnostic procedure.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92170638.en.html">Air Inlet Valve Actuator Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92169730.en.html">Temperature Valve Actuator Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92173357.en.html">Mode Control Cam Actuator Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92202618.en.html">Control Module References</a> </td></tr></table></div>
+
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

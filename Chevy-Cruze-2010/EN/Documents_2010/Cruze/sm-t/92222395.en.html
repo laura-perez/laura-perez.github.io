@@ -1,0 +1,210 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92222395.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Cruze</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0" >
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Cruze_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC P0105</H2>
+
+
+<A NAME="ss1-2222395">
+<A HREF="#ss1-2222395">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the 
+
+<a href="92092144.en.html">Diagnostic System Check - Vehicle</a>  prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review 
+
+<a href="91957622.en.html">Strategy Based Diagnosis</a>  for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91814794.en.html">Diagnostic Procedure Instructions</a>  provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2222395">
+<A HREF="#ss2-2222395">
+<H3>DTC Descriptors</H3></A><B>DTC&nbsp;P0105&nbsp;03:&nbsp;</B>Manifold Absolute Pressure (MAP) Sensor Circuit Low Voltage
+<br><br><B>DTC&nbsp;P0105&nbsp;07:&nbsp;</B>Manifold Absolute Pressure (MAP) Sensor Circuit High Voltage
+<br><br><B>DTC&nbsp;P0105&nbsp;5A:&nbsp;</B>Manifold Absolute Pressure (MAP) Sensor Circuit Not Plausible
+<br><br>
+<A NAME="ss3-2222395">
+<A HREF="#ss3-2222395">
+<H3>Circuit/System Description</H3></A><p>The turbocharger pressure sensor measures the pressure inside the intake manifold. Pressure in the intake manifold is affected by turbocharger output, engine speed, accelerator pedal input, air temperature, and barometric pressure (BARO). A diaphragm within
+the turbocharger pressure sensor is displaced by the pressure changes that occur from the varying load and operating conditions of the engine. The engine control module (ECM) supplies a regulated 5&nbsp;V to the sensor on the 5-volt reference circuit. The
+ECM supplies a ground on the low reference circuit. The turbocharger pressure sensor provides a signal voltage to the ECM, relative to the pressure changes, on signal circuit. The ECM converts the signal voltage input to a pressure value. Under normal operation,
+ the lowest pressure that can exist in the intake manifold is equal to the BARO. This occurs when the engine is operating at idle or when the ignition is ON and the engine is OFF. The ECM uses the turbocharger pressure sensor to aid in diagnosis of the turbocharger
+ performance. The highest manifold pressures occur when the turbocharger output is high. Manifold pressure can range from 58&nbsp;kPa (8&nbsp;PSI) when pressure is low, to greater than 240&nbsp;kPa (34&nbsp;psi) when pressure is high, depending on the
+BARO. The turbocharger pressure sensor has a range of 33-255&nbsp;kPa (4-36&nbsp;PSI).</p>
+
+<A NAME="ss4-2222395">
+<A HREF="#ss4-2222395">
+<H3>Conditions for Running the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs&nbsp;P0069, P0652, P2226, P2228, and P2229 are not set.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition is ON.</td></tr></table></div>
+
+
+<A NAME="ss5-2222395">
+<A HREF="#ss5-2222395">
+<H3>Conditions for Setting the DTC</H3></A><h4>P0105&nbsp;03, P0105&nbsp;07</h4><p>The ECM detects the MAP sensor signal circuit is open, shorted to ground, or shorted to a voltage for greater than 1&nbsp;s.</p>
+<h4>P0105&nbsp;5A</h4><p>The ECM detects the difference between the MAP sensor signal and the BARO sensor signal is greater than 20&nbsp;kPa (2.9&nbsp;PSI) for greater than 2&nbsp;s.</p>
+
+<A NAME="ss6-2222395">
+<A HREF="#ss6-2222395">
+<H3>Action Taken When the DTC Sets</H3></A><p>DTC&nbsp;P0105 is a Type&nbsp;B DTC.</p>
+
+<A NAME="ss7-2222395">
+<A HREF="#ss7-2222395">
+<H3>Conditions for Clearing the DTC</H3></A><p>DTC&nbsp;P0105 is a Type&nbsp;B DTC.</p>
+
+<A NAME="ss8-2222395">
+<A HREF="#ss8-2222395">
+<H3>Diagnostic Aids</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">If a shared 5-volt reference circuit is shorted to ground or shorted to a voltage, other 5-volt reference circuits may be affected.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The scan tool 5-volt&nbsp;reference parameters should display OK.</td></tr></table></div>
+
+
+<A NAME="ss9-2222395">
+<A HREF="#ss9-2222395">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92204646.en.html">Engine Controls Schematics</a></p>
+<h4>Connector End View Reference</h4><p>
+<a href="CELLREF_164814">Component Connector End Views</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91506352.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91465833.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>DTC Type Reference</h4><p>
+<a href="92223447.en.html">Powertrain Diagnostic Trouble Code (DTC) Type Definitions</a></p>
+<h4>Scan Tool Reference</h4><p>
+<a href="92202618.en.html">Control Module References</a> for scan tool information</p>
+<h4>Special Tools </h4><p><em>EN&nbsp;23738-A </em>Mity Vac
+ </p>
+<p>For equivalent regional tools, refer to 
+
+<a href="92222647.en.html">Fuel System Diagnosis</a> .</p>
+
+<A NAME="ss10-2222395">
+<A HREF="#ss10-2222395">
+<H3>Circuit/System Verification</H3></A>
+<OL><LI TYPE="1"> Ignition On, observe the DTC information with a scan tool. Verify that DTCs&nbsp;P0641, P0651, or P0697 is not set.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If any DTCs are set, refer to 
+
+<a href="92222431.en.html">DTC P0641, P0651, or P0697</a>  for further diagnosis.</td></tr></table></div>
+<LI TYPE="1">Determine the current vehicle testing altitude. Ignition ON, observe the scan tool BARO Sensor parameter. Compare the parameter to the 
+
+<a href="92222006.en.html">Altitude Versus Barometric Pressure</a> .</LI>
+<LI TYPE="1">Ignition ON, observe the scan tool Boost Pressure Sensor parameter. The Boost Pressure Sensor parameter should match the BARO sensor parameter. </LI>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC to verify the DTC does not reset. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records data.</LI>
+</OL>
+
+<A NAME="ss11-2222395">
+<A HREF="#ss11-2222395">
+<H3>Circuit/System Testing</H3></A>
+<OL><LI TYPE="1"> Verify the integrity of the entire air induction system by inspecting for the following conditions:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Damaged components</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Loose or improper installation</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top"> Any vacuum leak</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Verify there are no restrictions in the B111&nbsp;Turbocharger Boost Sensor port or vacuum source.</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If a condition is found, repair as necessary.</td></tr></table></div>
+<LI TYPE="1">Ignition OFF, disconnect the harness connector at the B111&nbsp;Turbocharger Boost Sensor.</LI>
+<LI TYPE="1">Test for less than 5&nbsp;&#8486; between the low reference circuit terminal&nbsp;4 and ground.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified range, test the low reference circuit for an open/high resistance. If the circuit tests normal, replace the K20&nbsp;ECM.</td></tr></table></div>
+<LI TYPE="1">Ignition ON, test for 4.8-5.2&nbsp;V between the 5-volt reference circuit terminal&nbsp;2 and ground.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If less than the specified range, test the 5-volt reference circuit for a short to ground or an open/high resistance. If the circuit tests normal, replace the K20&nbsp;Engine Control Module.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified range, test the 5-volt reference circuit for a short to voltage. If the circuit tests normal, replace the K20&nbsp;Engine Control Module.</td></tr></table></div>
+<LI TYPE="1">Verify the scan tool Boost Pressure Sensor parameter is less than 24&nbsp;kPa.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified range, test the signal circuit for a short to voltage. If the circuit tests normal, replace the K20&nbsp;Engine Control Module.</td></tr></table></div>
+<LI TYPE="1">Install a 3&nbsp;A fused jumper wire between the signal circuit terminal&nbsp;1 and the 5-volt reference circuit terminal&nbsp;2. Verify the Boost Pressure Sensor parameter is between 40-45&nbsp;kPa (5.8-6.5&nbsp;PSI).</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If less than the specified range, test the signal circuit for an open or a short to ground. If the circuit tests normal, replace the K20&nbsp;Engine Control Module.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&#8658;</td><td valign="top">If greater than the specified range, test the signal circuit for a high resistance. If the circuit tests normal, replace the K20&nbsp;Engine Control Module.</td></tr></table></div>
+<LI TYPE="1">If all circuits test normal, test or replace the B111&nbsp;Turbocharger Boost Sensor.</LI>
+</OL>
+
+<A NAME="ss12-2222395">
+<A HREF="#ss12-2222395">
+<H3>Repair Instructions</H3></A><p>Perform the 
+
+<a href="91556771.en.html">Diagnostic Repair Verification</a>  after completing the diagnostic procedure.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92171026.en.html">Intake Air Pressure and Temperature Sensor Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92202618.en.html">Control Module References</a>  for engine control module replacement, setup, and programming</td></tr></table></div>
+
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
